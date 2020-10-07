@@ -1,9 +1,9 @@
 body {
-    background: #0dceda;
+    background: #a6dcef;
 }
 
 .card {
-    background: linear-gradient(to bottom right, #6ef3d6 , #c6fce5);
+    background: #f0f0f0;
     max-width: 200px;
     width: 40%;
     height: auto;
