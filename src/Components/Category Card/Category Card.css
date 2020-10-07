@@ -1,0 +1,22 @@
+body {
+    background: #0dceda;
+}
+
+.card {
+    background: linear-gradient(to bottom right, #6ef3d6 , #c6fce5);
+    max-width: 200px;
+    width: 40%;
+    height: auto;
+}
+
+.cardList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    border: 1px solid #0dceda ;
+    border-radius: 3px;
+}
