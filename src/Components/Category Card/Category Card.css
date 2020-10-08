@@ -1,11 +1,11 @@
 body {
-    background: #a6dcef;
+    background: #f0f0f0;
 }
 
 .card {
-    background: #f0f0f0;
+    background: #a6dcef;
     max-width: 200px;
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
