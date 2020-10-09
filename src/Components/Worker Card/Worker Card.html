@@ -2,23 +2,71 @@
 <html lang="en">
 <title>Category Card </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Worker%20Card.css">
     <body >
-        <div class="row border">
-            <img class="col-3" src="https://robohash.org/123" alt='robot'/>
-            <div class="col-8">
-                <h2>Lorem Ipsum</h2>
+        <div class="row col-9 cards border ma3 grow shadow-4">
+            <div class="col-3">
+                <img src="https://robohash.org/123" alt='robot'/>
+            </div>
+            <div class="col-5">
+                <p>Name : Lorem Ipsum</p>
+
+                <p>Ratings :
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                </p>
+
+                <p>Successful Visits: 47</p>
+
+            </div>
+            <div class="col-4">
+                <p>Services :
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                    </ul>
+                </p>
+                <button class="btn-info ma3">Request Service</button>
             </div>
         </div>
-        <div class="row border">
-            <img class=" col-3" src="https://robohash.org/123" alt='robot'/>
-            <div class=" col-8">
-                <h2>Lorem Ipsum</h2>
-            </div>
-        </div>
+<!--        <div class="row col-9 cards border ma3 grow shadow-4">-->
+<!--            <div class="col-3">-->
+<!--                <img src="https://robohash.org/123" alt='robot'/>-->
+<!--            </div>-->
+<!--            <div class="col-5">-->
+<!--                <label for="name" class="">Name : </label>-->
+<!--                <p class="col-3 margin" id="name" >Lorem Ipsum</p>-->
+<!--                <label for="ratings1">Ratings : </label>-->
+<!--                <div id="ratings1">-->
+<!--                    <span class="fa fa-star checked"></span>-->
+<!--                    <span class="fa fa-star checked"></span>-->
+<!--                    <span class="fa fa-star checked"></span>-->
+<!--                    <span class="fa fa-star checked"></span>-->
+<!--                    <span class="fa fa-star"></span>-->
+<!--                </div>-->
+<!--                <p>Successful Visits: </p>-->
+<!--            </div>-->
+<!--            <div class="col-4">-->
+<!--                <p class="font-weight-bold">Services :</p>-->
+<!--                <ul>-->
+<!--                    <li>1</li>-->
+<!--                    <li>2</li>-->
+<!--                    <li>3</li>-->
+<!--                    <li>4</li>-->
+<!--                </ul>-->
+<!--                <button class="btn-info rounded ma3">Request Service</button>-->
+<!--            </div>-->
+<!--        </div>-->
     </body>
 </html>
