@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Sign-up Form.css">
+    <title>Sign-Up</title>
+  </head>
+  <body>
+    <div class="vertical-line">
+
+    </div>
+    <div class="form-box shadow-lg p-5 mb-5 bg-white rounded">
+      <h1 class="sign-up">Sign-Up......</h1>
+      <form action="index.html" method="post">
+        <label for="fname">First name:</label>
+        <input class="fname" type="text" id="fname" name="fname">
+        <label for="lname">Last name:</labeshadow-lg p-3 mb-5 bg-white roundedl>
+        <input class="lname" type="text" id="lname" name="lname"><br>
+        <div class="label-names">
+          <table class=input-items>
+            <tr>
+              <td><label for="gender">Gender:</label></td>
+              <td><select name="Gender" class="gender-select">
+                    <option value="">--None--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgender">Transgender</option>
+                  </select></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Phone:</label></td>
+              <td><input class="phone" type="text" name="phone"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input class="email" type="email" name="email"></td>
+            </tr>
+            <tr>
+              <td><label for="city">City:</label></td>
+              <td><input class="cityname" type="text" name="city"></td>
+            </tr>
+            <tr>
+              <td><label for="state">State:</label></td>
+              <td><input class="statename" type="text" name="state"></td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input class="password" type="password" name="password"></input>
+                    <div class="pass-msg">Password should contain a lowercase and uppercase alphabet, a number and a special character.<br>
+                      (For Example: @,#,!,*,etc.)
+                    </div></td>
+            </tr>
+            <tr>
+              <td><label for="retype-password">Retype Password:</label></td>
+              <td><input class="retype-password" type="password" name="retype-password"></input></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button class="signup-btn pure-button" type="button" name="button">Sign Up</button></td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
