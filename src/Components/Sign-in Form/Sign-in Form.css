@@ -1,0 +1,94 @@
+body{
+  background: #eeeeee;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.sign-in-box{
+  display: block;
+  position: absolute;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  width: 45%;
+  top: 5rem;
+  left: 25rem;
+  right: 25rem;
+  margin: auto;
+}
+
+.sgtable{
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.sgin{
+  border-right: 1px solid black;
+  padding-right: 0.5rem;
+}
+
+.sign-in{
+  border: none;
+  background: none;
+}
+
+.sign-up{
+  background: none;
+  border: none;
+}
+
+form{
+  font-size: 1.15rem;
+  margin-top: 10vh;
+  text-align: center;
+  line-height: 2vh;
+}
+.email{
+  
+  width: 30%;
+}
+
+.password{
+
+  width: 30%;
+}
+
+.logo-block{
+  display: block;
+  position: relative;
+  top: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.logo-img{
+  width: 40vh;
+}
+
+.forgot-pass{
+  width: 30%;
+  display: block;
+  position: relative;
+  top: -5.5vh;
+  margin: auto;
+  text-align: left;
+}
+
+em{
+  font-size: 0.8rem;
+}
+
+.login-box{
+  text-align: center;
+  margin-top: -4vh;
+}
+
+.login-btn{
+  font-family: 'Nunito', sans-serif;
+  width: 30%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border:0;
+  background: #41aea9;
+  color: #fff;
+}
