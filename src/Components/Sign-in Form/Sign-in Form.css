@@ -44,7 +44,6 @@ form{
   line-height: 2vh;
 }
 .email{
-  
   width: 30%;
 }
 
@@ -89,6 +88,21 @@ em{
   padding-top: 1vh;
   padding-bottom: 1vh;
   border:0;
-  background: #41aea9;
-  color: #fff;
+` color: #fff;
+  background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
+  background-size: 400% 400%;
+  animation: change 7s ease-in-out infinite;
+}
+
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+
 }
