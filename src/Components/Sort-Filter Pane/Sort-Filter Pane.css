@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.pane{
+    width: 15%;
+    height: 100%;
+    float: left;
+    background: #c6fce5;
+    font-size: 1.25vw;
+}
+
+div{
+    padding: 5px 5px 10px;
+}

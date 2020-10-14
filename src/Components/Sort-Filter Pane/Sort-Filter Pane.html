@@ -1,30 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="sort.css">
-</head>
-<body>
-<span class="a-dropdown-container">
-	<label for="s-result-sort-select" class="a-native-dropdown">Sort by:</label>
-	<select name="s" autocomplete="off" id="s-result-sort-select" tabindex="0" data-action="a-dropdown-select" class="a-native-dropdown a-declarative" aria-pressed="false">
-        
-            <option data-url="" value="Location" selected="">Location</option>
-        
-            <option data-url="" value="Rating">Rating</option>
-        
-        </select>
-    <span tabindex="-1" aria-label="Sort by:" class="a-button a-button-dropdown a-button-small" aria-hidden="true" id="a-autoid-0" style="min-width: 0%;">
-    	<span class="a-button-inner">
-    		<span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true" id="a-autoid-0-announce">
-    			<span class="a-dropdown-label"></span>
-    			<span class="a-dropdown-prompt"></span>
-    		</span>
-    		<i class="a-icon a-icon-dropdown">
-    			
-    		</i>
-    	</span>
-    </span>
-</span>
-</body>
+<html lang="en">
+	<head>
+		<title>Sort-FilterPane</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+		<link rel="stylesheet" type="text/css" href="Sort-Filter%20Pane.css">
+	</head>
+	<body>
+		<div class="pane shadow-3">
+			<div>
+				<t>Sort By : </t><br>
+				<input type="radio" id="location" name="sort" value="location">
+				<label for="location">Location</label><br>
+				<input type="radio" id="ratings" name="sort" value="ratings">
+				<label for="ratings">Ratings</label><br>
+			</div>
+			<div>
+				<div>
+					<t>stbsbgf</t><br>
+					<input type="checkbox" id="location" name="filter1" value="location">
+					<label for="location">Location</label><br>
+					<input type="checkbox" id="ratings" name="filter1" value="ratings">
+					<label for="ratings">Ratings</label><br>
+				</div>
+				<div>
+					<t>stbsbgf</t><br>
+					<input type="checkbox" id="location" name="filter2" value="location">
+					<label for="location">Location</label><br>
+					<input type="checkbox" id="ratings" name="filter2" value="ratings">
+					<label for="ratings">Ratings</label><br>
+				</div>
+				<div>
+					<t>stbsbgf</t><br>
+					<input type="checkbox" id="location" name="filter3" value="location">
+					<label for="location">Location</label><br>
+					<input type="checkbox" id="ratings" name="filter3" value="ratings">
+					<label for="ratings">Ratings</label><br>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
