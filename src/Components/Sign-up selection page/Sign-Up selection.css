@@ -1,0 +1,95 @@
+body{
+  background: #eeeeee;
+  font-family: 'Karla', sans-serif;
+}
+
+.sign-up-box{
+  display: block;
+  position: absolute;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  width: 45%;
+  top: 5rem;
+  left: 25rem;
+  right: 25rem;
+  margin: auto;
+}
+
+.sgtable{
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.sgin{
+  border-right: 1px solid black;
+  padding-right: 0.5rem;
+}
+
+.sign-in{
+  border: none;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background: none;
+  width: 80%;
+}
+
+.sign-up{
+  width:80%;
+  background: none;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border: none;
+}
+
+.logo-block{
+  display: block;
+  position: relative;
+  top: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
+.logo-img{
+  width: 40vh;
+}
+
+.choice-box{
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.create-btn{
+  font-family: 'Nunito', sans-serif;
+  width: 50%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border:0;
+  color: white;
+  background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
+  background-size: 400% 400%;
+  animation: change 7s ease-in-out infinite;
+}
+
+.google-btn{
+  font-family: 'Nunito', sans-serif;
+  width: 50%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border:0;
+  color: black;
+}
+
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+
+}
