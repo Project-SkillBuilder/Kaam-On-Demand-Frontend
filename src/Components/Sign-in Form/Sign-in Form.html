@@ -13,7 +13,8 @@
     <title>Sign-In</title>
   </head>
   <body>
-    <div class="sign-in-box shadow-lg p-3 mb-5 bg-white rounded">
+
+    <div class="sign-in-box shadow-lg p-3 mb-5 rounded">
       <table class="sgtable">
         <tr>
           <td class="sgin"><button class="sign-in" type="button" name="button">Sign In</button></td>
@@ -24,10 +25,10 @@
         <img class="logo-img" src="kod.png" alt="logo">
       </div>
       <form class="sign-in-form">
-        <label for="email">Email or Phone</label><br>
-        <input class="email shadow  mb-5 bg-white rounded ba b--light-gray" type="email" name="email"><br>
-        <label for="password">Password</label><br>
-        <input class="password shadow  mb-5 bg-white rounded ba b--light-gray" type="password" name="password" value=""><br>
+        <div class="form-box">
+          <input class="email shadow rounded ba b--light-gray" type="email" placeholder="Email or Phone Number" name="email"><br>
+          <input class="password shadow rounded ba b--light-gray" type="password" placeholder="Password" name="password" value="">
+        </div>
       </form>
       <div class="forgot-pass">
         <em>Forgot Password?</em>
