@@ -10,21 +10,21 @@ body{
   background-color: #fff;
   border: none;
   width: 45%;
-  top: 5rem;
-  left: 25rem;
-  right: 25rem;
+  top: 10vh;
+  left: 25vw;
+  right: 25vw;
   margin: auto;
 }
 
 .sgtable{
   text-align: center;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
 }
 
 .sgin{
   border-right: 1px solid black;
-  padding-right: 0.5rem;
+  padding-right: 0.5vw;
 }
 
 .sign-in{
@@ -46,13 +46,13 @@ body{
 .logo-block{
   display: block;
   position: relative;
-  top: 2rem;
+  top: 2vh;
   margin: auto;
   text-align: center;
 }
 
 .logo-img{
-  width: 40vh;
+  width: 40%;
 }
 
 .choice-box{
@@ -62,7 +62,7 @@ body{
 
 .create-btn{
   font-family: 'Nunito', sans-serif;
-  width: 50%;
+  width: 40%;
   padding-top: 1vh;
   padding-bottom: 1vh;
   border:0;
@@ -72,13 +72,42 @@ body{
   animation: change 7s ease-in-out infinite;
 }
 
-.google-btn{
-  font-family: 'Nunito', sans-serif;
+.googlebtn{
+  border: none;
+  padding: 0;
+  background: none;
+  width: 100%;
+}
+.google {
+  background-color: #dd4b39;
+  color: white;
+  width: 40%;
+  margin-bottom: 4vh;
+}
+
+.btn:hover{
+  opacity: 1;
+}
+
+/*horizontal line */
+.hol {
+  position: relative;
+  left:25%;
   width: 50%;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  border:0;
-  color: black;
+  border: 2px solid #ddd;
+  height: 0;
+  margin-bottom: 40px;
+}
+
+/* text inside the horiontal line */
+.hol-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
 }
 
 @keyframes change{
