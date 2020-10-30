@@ -62,6 +62,7 @@ body{
 
 .create-btn{
   font-family: 'Nunito', sans-serif;
+  font-size: 1.15vw;
   width: 40%;
   padding-top: 1vh;
   padding-bottom: 1vh;

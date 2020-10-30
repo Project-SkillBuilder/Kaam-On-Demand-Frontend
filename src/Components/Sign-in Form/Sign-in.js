@@ -43,21 +43,34 @@ function SignInUp() {
                             <div className="tab-pane fade show active" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin-tab">
                                 <form className="sign-in-form">
                                     <div className="form-box">
-                                        <input className="email shadow rounded ba b--light-gray" type="email" placeholder="Email or Phone Number" name="email"/><br/>
-                                        <input className="password shadow rounded ba b--light-gray" type="password" placeholder="Password" name="password"/>
+                                        <input className="email shadow rounded ba b--light-gray" type="email"
+                                               placeholder="Email or Phone Number" name="email"/><br/>
+                                            <input className="password shadow rounded ba b--light-gray" type="password"
+                                                   placeholder="Password" name="password" value=""/>
                                     </div>
                                 </form>
                                 <div className="forgot-pass">
                                     <em className="pointer">Forgot Password?</em>
                                 </div>
                                 <div className="login-box">
-                                    <button className="login-btn btn-lg shadow-lg  mb-5 rounded grow" type="submit" name="login">Login</button>
+                                    <button className="login-btn shadow-lg  mb-5 rounded" type="submit"
+                                            name="login">Login
+                                    </button>
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
                                 <div className="choice-box">
-                                    <button className="google-btn btn-lg shadow-lg  mb-5 rounded grow" type="submit" name="google-btn">Sign up with Google</button><br/>
-                                    <button className="create-btn btn-lg  shadow-lg  mb-5 rounded grow" type="submit" name="signup">Create an Account</button>
+                                    <button className="create-btn btn shadow-lg  mb-5 rounded" type="submit"
+                                            name="signup">Create an Account
+                                    </button>
+                                    <br/>
+                                        <div className="hol">
+                                            <span className="hol-innertext">or</span>
+                                        </div>
+                                        <button className="googlebtn" type="submit" name="googlebtn">
+                                            <a href="#" className="google btn">
+                                                <i className="fa fa-google fa-fw"/> Login with Google+</a>
+                                        </button>
                                 </div>
                             </div>
                         </div>
