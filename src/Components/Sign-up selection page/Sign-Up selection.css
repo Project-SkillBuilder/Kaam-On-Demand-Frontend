@@ -32,11 +32,11 @@ body{
   padding-top: 1vh;
   padding-bottom: 1vh;
   background: none;
-  width: 80%;
+  width: 48%;
 }
 
 .sign-up{
-  width:80%;
+  width:48%;
   background: none;
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -79,6 +79,9 @@ body{
   padding-bottom: 1vh;
   border:0;
   color: black;
+  background: linear-gradient(-45deg, #0dceda, #6ef3d6, #c6fce5, #19a4c0);
+  background-size: 400% 400%;
+  animation: change 7s ease-in-out infinite;
 }
 
 @keyframes change{

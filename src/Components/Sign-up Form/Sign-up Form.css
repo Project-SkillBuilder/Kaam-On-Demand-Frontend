@@ -1,6 +1,5 @@
 
 body{
-  background: #07689f;
   font-family: 'Montserrat Alternates', sans-serif;
   color: #000000;
   font-weight: bold;
@@ -9,13 +8,13 @@ body{
 .form-box{
   margin: 7rem 18rem auto 20rem;
   font-size: 1.2rem;
-  background: #a3d8f4;
 }
 
 input{
-  border-radius: 10px;
+  border-radius: 3px;
   border: none;
-
+  box-shadow: black;
+  height: 30px;
 }
 
 select{
@@ -85,6 +84,7 @@ select{
 }
 
 .signup-btn{
+  border-radius: 40px;
   margin: 2rem auto auto 2rem;
   font-family: 'Nunito', sans-serif;
   border: 0;
@@ -98,9 +98,6 @@ select{
   background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
   background-size: 400% 400%;
   animation: change 7s ease-in-out infinite;
-}
-btn{
-
 }
 
 @keyframes change{
