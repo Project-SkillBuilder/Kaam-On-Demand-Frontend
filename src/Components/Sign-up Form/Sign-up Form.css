@@ -21,9 +21,10 @@ img{
 }
 
 input{
-  border-radius: 10px;
+  border-radius: 3px;
   border: none;
-
+  box-shadow: black;
+  height: 30px;
 }
 
 select{
@@ -93,6 +94,7 @@ select{
 }
 
 .signup-btn{
+  border-radius: 40px;
   margin: 4vh auto auto 2vw;
   font-family: 'Nunito', sans-serif;
   border: 0;
@@ -106,9 +108,6 @@ select{
   background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
   background-size: 400% 400%;
   animation: change 7s ease-in-out infinite;
-}
-btn{
-
 }
 
 @keyframes change{
