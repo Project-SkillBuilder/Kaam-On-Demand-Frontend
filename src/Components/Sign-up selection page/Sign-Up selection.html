@@ -7,26 +7,34 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Sign-Up selection.css">
-    <title>sign-up slect</title>
+    <title>sign-up selection</title>
   </head>
   <body>
-    <div class="sign-up-box shadow-lg p-3 mb-5 rounded">
-      <table class="sgtable">
-        <tr>
-          <td class="sgin"><button class="sign-in" type="button" name="button">Sign In</button></td>
-          <td class="sgup"><button class="sign-up" type="button" name="button">Sign Up</button></td>
-        </tr>
-      </table>
-      <div class="logo-block">
-        <img class="logo-img" src="kod.png" alt="logo">
-      </div>
-      <div class="choice-box">
-        <button class="create-btn shadow-lg  mb-5 rounded" type="submit" name="signup">Create and Account with Email.</button><br>
-        <button class="google-btn shadow-lg  mb-5 rounded" type="submit" name="google-btn">Sign up with Google</button>
-      </div>
-    </div>
+    <form action="/action_page.php">
+      <div class="sign-up-box shadow-lg p-3 mb-5 rounded">
+        <table class="sgtable">
+          <tr>
+            <td class="sgin"><button class="sign-in" type="button" name="button">Sign In</button></td>
+            <td class="sgup"><button class="sign-up" type="button" name="button">Sign Up</button></td>
+          </tr>
+        </table>
+        <div class="logo-block">
+          <img class="logo-img " src="kod.png" alt="logo">
+        </div>
+        <div class="choice-box">
+          <button class="create-btn btn shadow-lg  mb-5 rounded" type="submit" name="signup">Create an Account with Email.</button><br>
+          <div class="hol">
+              <span class="hol-innertext">or</span>
+          </div>
+          <button class="googlebtn" type="submit" name="googlebtn">
+          <a href="#" class="google btn">
+            <i class="fa fa-google fa-fw"></i> Login with Google+</a>
+          </button>
+        </div>
+      </form>
   </body>
 </html>

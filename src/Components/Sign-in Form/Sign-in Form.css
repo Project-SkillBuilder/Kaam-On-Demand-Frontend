@@ -17,6 +17,15 @@ body{
   margin: auto;
 }
 
+.nav-tabs{
+  border-bottom: none;
+}
+
+.modal-content{
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
 
 .sgtable{
   text-align: center;
@@ -34,11 +43,11 @@ body{
   padding-top: 1vh;
   padding-bottom: 1vh;
   background: none;
-  width: 80%;
+  width: 48%;
 }
 
 .sign-up{
-  width:80%;
+  width:48%;
   background: none;
   padding-top: 1vh;
   padding-bottom: 1vh;
