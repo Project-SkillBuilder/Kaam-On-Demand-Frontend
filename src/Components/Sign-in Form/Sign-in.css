@@ -1,0 +1,195 @@
+body{
+    background: #eeeeee;
+    font-family: 'Karla', sans-serif;
+    font-size: 100%;
+}
+@media (max-width : 860px){
+    body{
+        font-size: 50%;
+    }
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.choice-box{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.create-btn{
+    font-family: 'Nunito', sans-serif;
+    width: 40%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border:0;
+    color: white;
+    background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
+    background-size: 400% 400%;
+    animation: change 7s ease-in-out infinite;
+}
+
+em{
+    font-size: 0.8vw;
+}
+
+.email{
+    margin-bottom: 8px;
+    width: 40%;
+    height: 10%;
+    padding: 10px;
+}
+
+form{
+    font-size: 1.15vw;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.forgot-pass{
+    width: 30%;
+    display: block;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    right: 4%;
+}
+
+.google {
+    background-color: #dd4b39;
+    color: white;
+    width: 40%;
+    margin-bottom: 4vh;
+}
+
+.googlebtn{
+    border: none;
+    padding: 0;
+    background: none;
+    width: 100%;
+}
+
+/*horizontal line */
+.hol {
+    position: relative;
+    left:25%;
+    width: 50%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: black;
+    background: linear-gradient(-45deg, #0dceda, #6ef3d6, #c6fce5, #19a4c0);
+    background-size: 400% 400%;
+    animation: change 7s ease-in-out infinite;
+    border: 2px solid #ddd;
+    height: 0;
+    margin-bottom: 40px;
+}
+
+/* text inside the horiontal line */
+.hol-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+
+.modal-content{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-tabs{
+    border-bottom: none;
+}
+
+.login-box{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.login-btn{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15vw;
+    width: 40%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border:0;
+    color: white;
+    background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
+    background-size: 400% 400%;
+    animation: change 7s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.logo-block{
+    display: block;
+    position: relative;
+    top: 2vh;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-img{
+    width: 40%;
+}
+
+.password{
+    width: 40%;
+    height: 10%;
+    padding: 10px;
+}
+
+.sign-in{
+    border: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background: none;
+    width: 48%;
+}
+
+.sign-up{
+    width:48%;
+    background: none;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border: none;
+}
+
+.sign-in-box{
+    display: block;
+    position: absolute;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    width: 45%;
+    top: 10vh;
+    left: 25vw;
+    right: 25vw;
+    margin: auto;
+}
+
+.sgin{
+    border-right: 1px solid black;
+    padding-right: 0.5vw;
+}
+
+.sgtable{
+    text-align: center;
+    width: 100%;
+    font-size: 1.2vw;
+}

@@ -8,6 +8,15 @@ body{
   text-decoration: none;
 }
 
+a{
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+a:hover{
+  color: white;
+}
+
 nav{
   height: 13vh;
   margin-top: 0;
@@ -116,20 +125,5 @@ label #cancel{
   nav ul li a{
     font-size: 20px;
     color: black;
-  }
-
-  #check:checked ~ ul{
-    left: 0;
-  }
-
-  #check:checked ~ label #btn{
-    display: none;
-  }
-
-  #check:checked ~ label #cancel{
-    display: block;
-    position: absolute;
-    right: 15px;
-    float: right;
   }
 }
