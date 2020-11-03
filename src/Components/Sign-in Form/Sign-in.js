@@ -6,7 +6,7 @@ function SignInUp() {
         <div>
 
             
-            <button type="button" className="btn btn-primary m-3 rounded grow" data-toggle="modal" data-target="#signinup">
+            <button type="button" className="btn btn1 btn-primary m-3 rounded grow" data-toggle="modal" data-target="#signinup">
                 Sign-In/Sign-Up
             </button>
             
