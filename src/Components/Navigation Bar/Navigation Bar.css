@@ -97,6 +97,11 @@ label #cancel{
   }
 }
 
+div{
+  background: #41aea9;
+  width: 100%;
+}
+
 @media (max-width : 860px){
   label #btn{
     display: block;

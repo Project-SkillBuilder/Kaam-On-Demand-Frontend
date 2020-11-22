@@ -6,10 +6,9 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
-import LandingPage from "./Components/Landing Page/Landing Page";
-
+import NavBar from "./Components/Navigation Bar/Navigation Bar";
 ReactDOM.render(
-  <LandingPage/>,
+  <NavBar/>,
   document.getElementById('root')
 );
 
