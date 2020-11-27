@@ -6,9 +6,9 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
-
+import CustomerProfile from "./Views/Customer Profile/Customer Profile";
 ReactDOM.render(
-  <App/>,
+  <CustomerProfile/>,
   document.getElementById('root')
 );
 

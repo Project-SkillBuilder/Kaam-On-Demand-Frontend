@@ -1,13 +1,12 @@
 import React from "react";
-import './Sign-in Form.css';
-import '../Sign-up selection page/Sign-Up selection.css';
+import "./Sign-in.css";
 
 function SignInUp() {
     return (
         <div>
 
             
-            <button type="button" className="btn btn-primary m-3 rounded grow" data-toggle="modal" data-target="#signinup">
+            <button type="button" className="btn btn1 btn-primary m-3 rounded grow" data-toggle="modal" data-target="#signinup">
                 Sign-In/Sign-Up
             </button>
             
@@ -46,28 +45,28 @@ function SignInUp() {
                                         <input className="email shadow rounded ba b--light-gray" type="email"
                                                placeholder="Email or Phone Number" name="email"/><br/>
                                             <input className="password shadow rounded ba b--light-gray" type="password"
-                                                   placeholder="Password" name="password" value=""/>
+                                                   placeholder="Password" name="password" defaultValue=""/>
                                     </div>
                                 </form>
                                 <div className="forgot-pass">
                                     <em className="pointer">Forgot Password?</em>
                                 </div>
                                 <div className="login-box">
-                                    <button className="login-btn shadow-lg  mb-5 rounded" type="submit"
+                                    <button className="login-btn shadow-lg  mb-5 rounded grow" type="submit"
                                             name="login">Login
                                     </button>
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
                                 <div className="choice-box">
-                                    <button className="create-btn btn shadow-lg  mb-5 rounded" type="submit"
+                                    <button className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
                                             name="signup">Create an Account
                                     </button>
                                     <br/>
                                         <div className="hol">
                                             <span className="hol-innertext">or</span>
                                         </div>
-                                        <button className="googlebtn" type="submit" name="googlebtn">
+                                        <button className="googlebtn grow" type="submit" name="googlebtn">
                                             <a href="#" className="google btn">
                                                 <i className="fa fa-google fa-fw"/> Login with Google+</a>
                                         </button>
