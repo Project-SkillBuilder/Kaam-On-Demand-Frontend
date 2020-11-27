@@ -6,9 +6,9 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
-import NavBar from "./Components/Navigation Bar/Navigation Bar";
+import CustomerProfile from "./Views/Customer Profile/Customer Profile";
 ReactDOM.render(
-  <NavBar/>,
+  <CustomerProfile/>,
   document.getElementById('root')
 );
 

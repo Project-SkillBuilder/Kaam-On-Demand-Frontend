@@ -1,10 +1,8 @@
-div {
-    padding: 2px;
-    margin: 2px;
+div{
+    padding-bottom: 2px;
 }
 
 img{
-    border: 1px solid black;
     align-self: center;
 }
 
