@@ -1,8 +1,4 @@
-body {
-    background: #f0f0f0;
-}
-
-.card {
+.Category_Card_card {
     background: #ebfffa;
     max-width: 200px;
     width: 30%;
@@ -10,12 +6,12 @@ body {
     border: none;
 }
 
-h2{
+.Category_Card_h2{
     margin-top: 5px;
     font-size: 1.7vw;
 }
 
-img {
+.Category_Card_img {
     border: 1px solid #0dceda ;
     border-radius: 3px;
 }

@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
+import $ from "jquery";
 import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/css/bootstrap.css';
 import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
-import CustomerProfile from "./Views/Customer Profile/Customer Profile";
+import NavBar from "./Components/Navigation Bar/Navigation Bar";
 ReactDOM.render(
-  <CustomerProfile/>,
+  <NavBar/>,
   document.getElementById('root')
 );
 
