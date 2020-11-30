@@ -5,12 +5,10 @@ import NavBar from "../../Components/Navigation Bar/Navigation Bar";
 const Wokerinfo = () => {
     return (
 
-        <div className="bg-white">
+        <div className="bg-white Winfo_main">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-            <div>
                 <NavBar/>
-            </div>
-            <div className="padding container-fluid">
+            <div className="pa3 container-fluid">
                 <div className="row">
                     <div className="col-4 image">
                         <img src="https://robohash.org/12" alt=""/>
@@ -27,30 +25,32 @@ const Wokerinfo = () => {
                             <span className="fa fa-star"></span>
                         </p>
                         <table>
-                            <tr>
-                                <td>
-                                    <h4>Services</h4>
-                                </td>
-                                <td className="d">
-                                    <h4>-&nbsp;Bibendum, Elementum, Lobortis</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4>Working Hours</h4>
-                                </td>
-                                <td className="d">
-                                    <h4>-&nbsp;9:00 a.m. to 7:00 p.m.</h4>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <h4>Working Days</h4>
-                                </td>
-                                <td className="d">
-                                    <h4>-&nbsp; Monday to Saturday</h4>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h4>Services</h4>
+                                    </td>
+                                    <td className="d">
+                                        <h4>-&nbsp;Bibendum, Elementum, Lobortis</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Working Hours</h4>
+                                    </td>
+                                    <td className="d">
+                                        <h4>-&nbsp;9:00 a.m. to 7:00 p.m.</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h4>Working Days</h4>
+                                    </td>
+                                    <td className="d">
+                                        <h4>-&nbsp; Monday to Saturday</h4>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                         <h4>Description of service - </h4>
                         <p>
@@ -71,10 +71,10 @@ const Wokerinfo = () => {
                     </div>
                 </div>
                 <hr/>
-                <div className="row ">
-                    <h2 className="col-12 pa3-l">Ratings And Reviews</h2>
+                <div className="row pa3">
+                    <h2 className="col-12">Ratings And Reviews</h2>
                     <div className="col-8 comment">
-                        <div>
+                        <div className="row">
                             <h4>adflvjdfm</h4>
                             <p>
                                 <span className="fa fa-star checked"></span>
@@ -96,7 +96,7 @@ const Wokerinfo = () => {
                             </p>
                         </div>
 
-                        <div>
+                        <div className="row">
                             <h4>adflvjdfm</h4>
                             <p>
                                 <span className="fa fa-star checked"></span>
@@ -118,7 +118,7 @@ const Wokerinfo = () => {
                             </p>
                         </div>
 
-                        <div>
+                        <div className="row">
                             <h4>adflvjdfm</h4>
                             <p>
                                 <span className="fa fa-star checked"></span>
@@ -140,7 +140,7 @@ const Wokerinfo = () => {
                             </p>
                         </div>
 
-                        <div>
+                        <div className="row">
                             <h4>adflvjdfm</h4>
                             <p>
                                 <span className="fa fa-star checked"></span>
@@ -163,25 +163,52 @@ const Wokerinfo = () => {
                         </div>
 
                     </div>
-                    <div className="col-6">
-                        <h3>Add a Review</h3>
-                        <label htmlFor="title">Title :&emsp;&nbsp;</label>
-                        <input type="text" id="title" placeholder="Title"/><br/>
-                        <label htmlFor="review">Review :</label>
-                        <textarea className="review" id="review" placeholder="Write a review"></textarea><br/>
-                        <p>Service : &emsp;
-                            <input type="radio" id="1"/>
-                            <label htmlFor="1">very bad</label>&nbsp;
-                            <input type="radio" id="2"/>
-                            <label htmlFor="2">bad</label>&nbsp;
-                            <input type="radio" id="3"/>
-                            <label htmlFor="3">good</label>&nbsp;
-                            <input type="radio" id="4"/>
-                            <label htmlFor="4">very good</label>&nbsp;
-                            <input type="radio" id="5"/>
-                            <label htmlFor="5">excellent</label>
-                        </p>
-                        <button className="btn btn-primary">Add review</button>
+                    <div className="col-8">
+                        <table>
+                            <thead>
+                                <h3 className="row">Add a Review</h3>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <label htmlFor="title">Title :&emsp;&nbsp;</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="title" size="20" placeholder="Title"/><br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label htmlFor="review">Review :</label>
+                                    </td>
+                                    <td>
+                                        <textarea className="review" id="review" rows="6" cols="10" placeholder="Write a review"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="ratings">Service</label>
+                                    </td>
+                                    <td>
+                                        <p className="row">
+                                            <input type="radio" id="1"/>
+                                            <label htmlFor="1">very bad</label>&nbsp;
+                                            <input type="radio" id="2"/>
+                                            <label htmlFor="2">bad</label>&nbsp;
+                                            <input type="radio" id="3"/>
+                                            <label htmlFor="3">good</label>&nbsp;
+                                            <input type="radio" id="4"/>
+                                            <label htmlFor="4">very good</label>&nbsp;
+                                            <input type="radio" id="5"/>
+                                            <label htmlFor="5">excellent</label>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <button className="btn btn-info row">Add review</button>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
             </div>

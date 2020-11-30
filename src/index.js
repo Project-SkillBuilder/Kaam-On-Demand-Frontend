@@ -7,9 +7,9 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
-import NavBar from "./Components/Navigation Bar/Navigation Bar";
+import Wokerinfo from "./Views/Worker Info/Worker Info";
 ReactDOM.render(
-  <NavBar/>,
+  <Wokerinfo/>,
   document.getElementById('root')
 );
 

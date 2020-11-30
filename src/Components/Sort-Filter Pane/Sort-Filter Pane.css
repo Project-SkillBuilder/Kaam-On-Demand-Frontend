@@ -1,8 +1,9 @@
-body {
+.Sort_body {
     margin: 0;
 }
 
-.pane{
+.Sort_pane{
+    padding-left: 10px;
     width: 15%;
     height: 100%;
     float: left;
@@ -10,6 +11,6 @@ body {
     font-size: 1.25vw;
 }
 
-div{
+.Sort_div{
     padding: 5px 5px 10px;
 }
