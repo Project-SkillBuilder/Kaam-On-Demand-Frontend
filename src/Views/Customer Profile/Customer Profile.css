@@ -1,30 +1,36 @@
-.height{
+.Cprofile_height{
     height: 48.5vw;
     max-width: 70vw;
 }
 
+.Cprofile_Pane{
+    padding: 0 0 0 10px;
+}
+
 body{
+    height: 100%;
+    width: 100%;
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 0px;
     background: white;
 }
 
-button{
+.Cprofile_button{
     background: white;
     border: none;
     color: #00adee;
 }
 
-li{
+.Cprofile_cards li{
     font-size: 1vw;
 }
 
-img{
+.Cprofile_cards img{
     object-fit: contain;
     max-height: 200px;
 }
 
-.cards {
+.Cprofile_cards {
     max-height: 250px;
     height: 10%;
 }
@@ -33,142 +39,20 @@ img{
     color: orange;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+.Cprofile_h1{
+    font-size: 2.7vw;
+    font-weight: lighter;
 }
 
-h1{
-    font-size: 2.8vw;
-    font-weight: normal;
-}
-
-td{
+.Cprofile td{
     font-size: 1.4vw;
     padding-right: 15px;
 }
 
-.a{
+.Cprofile_a{
     color: black;
 }
 
-a:hover{
-    color: white;
-}
-
-nav{
-    height: 13vh;
-    margin-top: 0;
-    background: #41aea9;
-    padding: 0;
-}
-
-nav img{
-    background: none;
-    width: 13vh;
-    position: absolute;
-    top: 8px;
-    left: 5%;
-    transition: all 0.4s ease 0s;
-}
-
-nav ul{
-    float: right;
-    margin-right: 25px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 15px 15px;
-}
-
-nav ul li a{
-    position: relative;
-    color: white;
-    padding: 5px 0;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-nav ul li a:before{
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background: white;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.2s linear;
-}
-
-nav ul li a:hover:before{
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-label #btn,
-label #cancel{
-    color: white;
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-@media (max-width : 900px){
-    nav img{
-        left:8%;
-        top: 2vh;
-        width: 80px;
-    }
-
-    nav ul li a{
-        font-size: 1em;
-    }
-}
-
-.div{
-    background: #41aea9;
-    width: 100%;
-}
-
-@media (max-width : 860px){
-    label #btn{
-        display: block;
-        position: absolute;
-        right: 15px;
-        float: right;
-    }
-
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #a6f6f1;
-        top: 13vh;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s
-    }
-
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a{
-        font-size: 20px;
-        color: black;
-    }
+.Cprofile_a:hover{
+    color: gray;
 }
