@@ -13,6 +13,7 @@ btn:hover{
     opacity: 1;
 }
 
+
 .choice-box{
     text-align: center;
     margin-top: 10vh;
@@ -35,15 +36,15 @@ em{
 }
 
 .email{
+    margin-top: 5vh;
     margin-bottom: 8px;
-    width: 40%;
+    width: 60%;
     height: 10%;
     padding: 10px;
 }
 
 .Sign_in_form{
     font-size: 1.15vw;
-    margin-top: 10vh;
     text-align: center;
 }
 
@@ -53,7 +54,7 @@ em{
     position: relative;
     margin: auto;
     text-align: left;
-    right: 4%;
+    right: 14%;
 }
 
 .google {
@@ -70,6 +71,12 @@ em{
     width: 100%;
 }
 
+.form-box{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 /*horizontal line */
 .hol {
     position: relative;
@@ -78,10 +85,7 @@ em{
     padding-top: 1vh;
     padding-bottom: 1vh;
     color: black;
-    background: linear-gradient(-45deg, #0dceda, #6ef3d6, #c6fce5, #19a4c0);
-    background-size: 400% 400%;
-    animation: change 7s ease-in-out infinite;
-    border: 2px solid #ddd;
+    border: 1px solid #ddd;
     height: 0;
     margin-bottom: 40px;
 }
@@ -115,7 +119,7 @@ em{
 .login-btn{
     font-family: 'Nunito', sans-serif;
     font-size: 1.15vw;
-    width: 40%;
+    width: 60%;
     padding-top: 1vh;
     padding-bottom: 1vh;
     border:0;
@@ -137,6 +141,7 @@ em{
 }
 
 .logo-block{
+    width:60%;
     display: block;
     position: relative;
     top: 2vh;
@@ -149,7 +154,7 @@ em{
 }
 
 .password{
-    width: 40%;
+    width: 60%;
     height: 10%;
     padding: 10px;
 }
