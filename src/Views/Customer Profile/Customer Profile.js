@@ -8,7 +8,6 @@ class CustomerProfile extends React.Component {
         return (
             <div style={{padding: 0}}>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-                <NavBar/>
                 <div className="row Cprofile_height">
                     <div className="col-3 Cprofile_Pane bg-light">
                         <div className="nav flex-column nav-tabs" id="v-tabs-tab" role="tablist"

@@ -1,4 +1,5 @@
 import React from "react";
+import kod from "./kod.png";
 import "./Sign-in.css";
 
 function SignInUp() {
@@ -35,7 +36,7 @@ function SignInUp() {
                             </tbody>
                         </table>
                         <div className="logo-block">
-                            <img className="logo-img" src={require('./kod.png')} alt="logo"/>
+                            <img className="logo-img" src={kod} alt="logo"/>
                         </div>
 
                         <div className="tab-content" id="nav-tabContent">

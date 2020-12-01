@@ -7,7 +7,7 @@ const Wokerinfo = () => {
 
         <div className="bg-white Winfo_main">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-                <NavBar/>
+
             <div className="pa3 container-fluid">
                 <div className="row">
                     <div className="col-4 image">

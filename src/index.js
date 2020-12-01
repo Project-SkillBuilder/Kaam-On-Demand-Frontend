@@ -7,9 +7,8 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
-import Wokerinfo from "./Views/Worker Info/Worker Info";
 ReactDOM.render(
-  <Wokerinfo/>,
+  <App/>,
   document.getElementById('root')
 );
 
