@@ -7,8 +7,9 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
+import SFpane from "./Components/Sort-Filter Pane/Sort-Filter Pane";
 ReactDOM.render(
-  <App/>,
+  <SFpane/>,
   document.getElementById('root')
 );
 

@@ -4,21 +4,21 @@ body {
     background: #ebfffa;
 }
 
-.Sign_In_Form_li{
+.WCard_li{
     font-size: 1vw;
 }
 
-.Sign_In_Form_img{
+.WCard_img{
     object-fit: contain;
     max-height: 200px;
 }
 
-.Sign_In_Form_cards {
+.WCard_cards {
     background: #c6fce5;
     max-height: 250px;
     height: 10%;
 }
 
-.Sign_In_Form_checked {
+.WCard_checked {
     color: orange;
 }

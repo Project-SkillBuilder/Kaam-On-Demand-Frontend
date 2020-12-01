@@ -8,9 +8,9 @@ import SearchBar from "../Search Bar/Search Bar";
 const CatPage = () => {
     return (
                 <div className="Category_Page_main">
-                    <NavBar/>
-                    <SearchBar/>
-
+                    <div className="Category_Page_Sbar text-center">
+                        <SearchBar/>
+                    </div>
                     <div className="Category_Page_container">
                         <CCard/>
                         <CCard/>

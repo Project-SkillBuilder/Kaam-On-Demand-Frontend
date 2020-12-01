@@ -1,7 +1,12 @@
 
 body {
     font-family: 'Montserrat Alternates', sans-serif;
-    background-image: url("logo.jpg");
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.Category_Page_Sbar{
+    padding-top: 8vh;
 }
 
 .Category_Page_logo{
@@ -38,9 +43,12 @@ body {
 }
 
 .Category_Page_container{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    text-after: center;
+    flex-wrap: wrap;
     position: absolute;
-    margin-top: 18vh;
+    margin-top: 8vh;
     left: 17vw;
     right: 17vw;
     z-index: -2;
