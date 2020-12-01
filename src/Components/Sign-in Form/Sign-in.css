@@ -9,16 +9,16 @@ body{
     }
 }
 
-.btn:hover{
+.Sign_In_Form_btn:hover{
     opacity: 1;
 }
 
-.choice-box{
+.Sign_In_Form_choice-box{
     text-align: center;
     margin-top: 10vh;
 }
 
-.create-btn{
+.Sign_In_Form_create-btn{
     font-family: 'Nunito', sans-serif;
     width: 40%;
     padding-top: 1vh;
@@ -30,7 +30,7 @@ body{
     animation: change 7s ease-in-out infinite;
 }
 
-em{
+.Sign_In_Form_em{
     font-size: 0.8vw;
 }
 
@@ -41,13 +41,13 @@ em{
     padding: 10px;
 }
 
-form{
+.Sign_In_Form_form{
     font-size: 1.15vw;
     margin-top: 10vh;
     text-align: center;
 }
 
-.forgot-pass{
+.Sign_In_Form_forgot-pass{
     width: 30%;
     display: block;
     position: relative;
@@ -56,14 +56,14 @@ form{
     right: 4%;
 }
 
-.google {
+.Sign_In_Form_google {
     background-color: #dd4b39;
     color: white;
     width: 40%;
     margin-bottom: 4vh;
 }
 
-.googlebtn{
+.Sign_In_Form_googlebtn{
     border: none;
     padding: 0;
     background: none;
@@ -71,7 +71,7 @@ form{
 }
 
 /*horizontal line */
-.hol {
+.Sign_In_Form_hol {
     position: relative;
     left:25%;
     width: 50%;
@@ -87,7 +87,7 @@ form{
 }
 
 /* text inside the horiontal line */
-.hol-innertext {
+.Sign_In_Form_hol-innertext {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -97,22 +97,22 @@ form{
     padding: 8px 10px;
 }
 
-.modal-content{
+.Sign_In_Form_modal-content{
     border: none;
     padding: 0px;
     margin: 0px;
 }
 
-.nav-tabs{
+.Sign_In_Form_nav-tabs{
     border-bottom: none;
 }
 
-.login-box{
+.Sign_In_Form_login-box{
     text-align: center;
     margin-top: 2vh;
 }
 
-.login-btn{
+.Sign_In_Form_login-btn{
     font-family: 'Nunito', sans-serif;
     font-size: 1.15vw;
     width: 40%;
