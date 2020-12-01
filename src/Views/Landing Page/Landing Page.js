@@ -19,49 +19,88 @@ class LandingPage extends React.Component{
     return (
         <div>
           <div className="main">
-            <img src={logo} alt="Kaam On Demand"/>
             <img id="logo" src={kod} alt="logo"/>
             <SignInUp/>
             <a href="#linking-content">
-              <button className="btn2 btn-primary" onClick={myFunction}>Know More</button>
+              <button className="knowmore-btn btn-primary" onClick={myFunction}>Know More</button>
             </a>
           </div>
           <a id="linking-content">
             <div className="bottom" id="bottom-content">
               <SignInUp/>
-              <div className="card row col-9 border ma5 grow shadow-4">
-                <div className="image col-3">
-                  <img src="https://robohash.org/123" alt='robot'/>
+              <div className="d-flex flexbox-main flex-lg-column justify-content-start">
+                <div className="d-flex flexbox flex-lg-row align-items-lg-center">
+                    <div className="card row col-5 border ma5 grow shadow-4">
+                        <div className="image col-4">
+                          <img src="https://robohash.org/123" alt='robot'/>
+                        </div>
+                        <div className="contentbox">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                          sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                          convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                          scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                          Ut sodales velit enim, a congue ex volutpat et.
+                        </div>
+                    </div>
                 </div>
-                <div className="contentbox">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                  sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                  convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                  scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                  Ut sodales velit enim, a congue ex volutpat et. Duis non tortor ac orci mattis maximus at ut neque. Aenean
-                  et augue ac ex congue vulputate. Sed ut elit ac enim cursus dignissim. Sed ornare, eros sit amet porta
-                  venenatis, leo justo viverra leo, laoreet posuere libero nulla sed augue. Quisque at posuere risus, id
-                  dignissim justo. Nam ullamcorper risus accumsan ex eleifend, ut varius justo pellentesque. Maecenas
-                  vehicula, nisl eu lacinia semper, turpis dolor gravida augue, eget ultricies nunc eros et odio. Vivamus sit
-                  amet ante ut nisl efficitur accumsan.
-                </div>
-              </div>
-              <div className="card row col-9 border ma5 grow shadow-4">
-                <div className="image col-3">
-                  <img src="https://robohash.org/123" alt='robot'/>
-                </div>
-                <div className="contentbox">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                  sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                  convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                  scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                  Ut sodales velit enim, a congue ex volutpat et. Duis non tortor ac orci mattis maximus at ut neque. Aenean
-                  et augue ac ex congue vulputate. Sed ut elit ac enim cursus dignissim. Sed ornare, eros sit amet porta
-                  venenatis, leo justo viverra leo, laoreet posuere libero nulla sed augue. Quisque at posuere risus, id
-                  dignissim justo. Nam ullamcorper risus accumsan ex eleifend, ut varius justo pellentesque. Maecenas
-                  vehicula, nisl eu lacinia semper, turpis dolor gravida augue, eget ultricies nunc eros et odio. Vivamus sit
-                  amet ante ut nisl efficitur accumsan.
-                </div>
+                  <div className="d-flex flexbox flex-lg-row justify-content-end">
+                    <div className="card row col-5 border ma5 grow shadow-4">
+                        <div className="image col-4">
+                          <img src="https://robohash.org/123" alt='robot'/>
+                        </div>
+                        <div className="contentbox">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                          sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                          convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                          scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                          Ut sodales velit enim, a congue ex volutpat et.
+                        </div>
+                    </div>
+                  </div>
+
+                  <div className="d-flex flexbox flex-lg-row align-items-lg-center">
+                    <div className="card row col-5 border ma5 grow shadow-4">
+                          <div className="image col-4">
+                              <img src="https://robohash.org/123" alt='robot'/>
+                          </div>
+                          <div className="contentbox">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                              sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                              convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                              scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                              Ut sodales velit enim, a congue ex volutpat et.
+                          </div>
+                    </div>
+                  </div>
+                  <div className="d-flex flexbox flex-lg-row justify-content-end">
+                    <div className="card row col-5 border ma5 grow shadow-4">
+                          <div className="image col-4">
+                              <img src="https://robohash.org/123" alt='robot'/>
+                          </div>
+                          <div className="contentbox">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                              sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                              convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                              scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                              Ut sodales velit enim, a congue ex volutpat et.
+                          </div>
+                    </div>
+                  </div>
+
+                  <div className="d-flex flexbox flex-lg-row align-items-lg-center">
+                    <div className="card row col-5 border ma5 grow shadow-4">
+                          <div className="image col-4">
+                              <img src="https://robohash.org/123" alt='robot'/>
+                          </div>
+                          <div className="contentbox">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                              sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                              convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                              scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                              Ut sodales velit enim, a congue ex volutpat et.
+                          </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </a>
