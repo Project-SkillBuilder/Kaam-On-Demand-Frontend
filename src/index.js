@@ -8,8 +8,9 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
 import WorkerCard from "./Components/Worker Card/Worker Card";
+import LandingPage from "./Views/Landing Page/Landing Page";
 ReactDOM.render(
-  <WorkerCard/>,
+  <LandingPage/>,
   document.getElementById('root')
 );
 
