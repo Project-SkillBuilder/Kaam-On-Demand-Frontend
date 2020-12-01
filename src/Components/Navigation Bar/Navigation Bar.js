@@ -9,7 +9,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import LandingPage from "../Landing Page/Landing Page";
+import LandingPage from "../../Views/Landing Page/Landing Page";
 
 
 const NavBar = () => {
