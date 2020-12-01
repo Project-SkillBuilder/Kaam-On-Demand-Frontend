@@ -20,18 +20,6 @@ body{
   background: #fff;
 }
 
-.Registration_Form_input{
-  border-radius: 3px;
-  border: none;
-  box-shadow: black;
-  height: 30px;
-}
-
-.Registration_Form_select{
-  border-radius: 10px;
-  border: none;
-}
-
 .Registration_Form_vertical-line{
   border-left: 0.2vw solid #fff;
   height: 90vh;
@@ -40,46 +28,22 @@ body{
   margin-left: -0.05rem;
 }
 
-.Registration_Form_sign-up{
-  font-size: 2.75vw;
-}
-
-.Registration_Form_fname{
-  margin-left: 2vw;
-}
-
-.Registration_Form_lname{
-  margin-left: 2vw;
-}
-
-.Registration_Form_label-names{
-  margin-top: 2vh;
+.Registration_Form{
+  border-radius: 3px;
+  border: none;
+  box-shadow: black;
+  height: 30px;
   line-height: 4vh;
 }
-
-.Registration_Form_gender-select{
-  margin-left: 2vw;
+.Registration_Form td{
+  padding: 5px 10px 5px 10px;
 }
 
-.Registration_Form_phone{
-  margin-left: 2vw;
-}
-
-.Registration_Form_email{
-  margin-left: 2vw;
-}
-
-.Registration_Form_cityname{
-  margin-left: 2vw;
-}
-
-.Registration_Form_statename{
-  margin-left: 2vw;
-}
-
-.Registration_Form_password{
-  margin-top: 2vh;
-  margin-left: 2vw;
+.Registration_Form input{
+  border-radius: 3px;
+  border: none;
+  box-shadow: black;
+  height: 30px;
 }
 
 .Registration_Form_pass-msg{
@@ -87,10 +51,6 @@ body{
   margin-left: 2vw;
   font-family: 'Nunito', sans-serif;
   line-height: 2vh;
-}
-
-.Registration_Form_retype-password{
-  margin-left: 2vw;
 }
 
 .Registration_Form_signup-btn{
@@ -104,7 +64,6 @@ body{
   line-height: 2.5;
   padding: 0 1.5rem;
   font-size: 1vw;
-  text-align: center;
   background: linear-gradient(-45deg, #790979, #FF3D77, #19a4c0, #fff0f0);
   background-size: 400% 400%;
   animation: change 7s ease-in-out infinite;

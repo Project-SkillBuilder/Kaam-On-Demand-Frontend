@@ -4,6 +4,7 @@ import React from "react";
 const WorkerCard = () => {
     return (
         <div className="row col-9 WCard_cards border ma3 grow shadow-4">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
             <div className="col-3">
                 <img className="WCard_img" src="https://robohash.org/123" alt='robot'/>
             </div>
@@ -11,10 +12,10 @@ const WorkerCard = () => {
                 <p>Name : Lorem Ipsum</p>
 
                 <p>Ratings :
-                    <span className="fa fa-star WCard_checked"></span>
-                    <span className="fa fa-star WCard_checked"></span>
-                    <span className="fa fa-star WCard_checked"></span>
-                    <span className="fa fa-star WCard_checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
+                    <span className="fa fa-star checked"></span>
                     <span className="fa fa-star"></span>
                 </p>
 
