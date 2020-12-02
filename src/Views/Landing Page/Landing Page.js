@@ -18,7 +18,7 @@ class LandingPage extends React.Component{
 
     return (
         <div>
-          <div className="main">
+          <div className="main body">
             <img id="logo" src={kod} alt="logo"/>
             <SignInUp/>
             <a href="#linking-content">
