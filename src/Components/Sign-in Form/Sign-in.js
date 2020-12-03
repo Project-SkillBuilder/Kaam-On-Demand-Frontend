@@ -1,7 +1,9 @@
 import React from "react";
+import $ from "jquery";
 import kod from "./kod.png";
 import "./Sign-in.css";
 import "./kod.png";
+import {Link} from "react-router-dom";
 
 function SignInUp() {
     return (
@@ -55,9 +57,12 @@ function SignInUp() {
                                     <em className="pointer em">Forgot Password?</em>
                                 </div>
                                 <div className="login-box">
-                                    <button className="login-btn shadow-lg  mb-5 rounded grow" type="submit"
-                                            name="login">Login
-                                    </button>
+                                    <Link to="/Home">
+                                        <button onClick={$('#signinup').modal('hide')} className="login-btn shadow-lg  mb-5 rounded grow" type="submit"
+                                                name="login">
+                                                Login
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">

@@ -2,7 +2,7 @@ import React from "react";
 import "./Worker Info.css";
 import NavBar from "../../Components/Navigation Bar/Navigation Bar";
 
-const Wokerinfo = () => {
+const Workerinfo = () => {
     return (
 
         <div className="bg-white Winfo_main">
@@ -217,4 +217,4 @@ const Wokerinfo = () => {
     );
 }
 
-export default Wokerinfo;
+export default Workerinfo;

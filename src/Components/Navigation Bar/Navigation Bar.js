@@ -2,7 +2,7 @@ import React from "react";
 import "./Navigation Bar.css";
 import kod from "./kod.png";
 import CustomerProfile from "../../Views/Customer Profile/Customer Profile";
-import Wokerinfo from "../../Views/Worker Info/Worker Info";
+import CatPage from "../../Views/Category Page/Category Page";
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,6 +10,8 @@ import {
     Link
 } from "react-router-dom";
 import LandingPage from "../../Views/Landing Page/Landing Page";
+import Workerlist from "../../Views/Worker List/main";
+import Workerinfo from "../../Views/Worker Info/Worker Info";
 
 
 const NavBar = () => {
@@ -24,17 +26,17 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse justify-end" id="navbarNavDropdown">
                         <ul className="navbar-nav nav_links">
                             <li className="nav-item active">
-                                <Link to="/">
-                                    <a className="Navigation_Bar_a nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                                <Link to="/Home">
+                                    <a className="Navigation_Bar_a nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/CustomerProfile">
-                                    <a className="Navigation_Bar_a nav-link" href="CustomerProfile">My Profile</a>
+                                <Link to="/Home/CustomerProfile">
+                                    <a className="Navigation_Bar_a nav-link" href="#">My Profile</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="LandingPage">
+                                <Link to="/LandingPage">
                                     <a className="Navigation_Bar_a nav-link" href="#">Sign-Out</a>
                                 </Link>
                             </li>
@@ -42,14 +44,17 @@ const NavBar = () => {
                     </div>
                 </nav>
                 <Switch>
-                    <Route path="/LandingPage">
-                        <LandingPage/>
+                    <Route path="/Home/WorkerList/WorkerInfo">
+                        <Workerinfo/>
                     </Route>
-                    <Route path="/CustomerProfile">
+                    <Route path="/Home/WorkerList">
+                        <Workerlist/>
+                    </Route>
+                    <Route path="/Home/CustomerProfile">
                         <CustomerProfile/>
                     </Route>
-                    <Route path="/">
-                        <Wokerinfo/>
+                    <Route path="/Home">
+                        <CatPage/>
                     </Route>
                 </Switch>
             </div>

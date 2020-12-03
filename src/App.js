@@ -8,6 +8,9 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import CustomerProfile from "./Views/Customer Profile/Customer Profile";
+import LandingPage from "./Views/Landing Page/Landing Page";
+import CatPage from "./Views/Category Page/Category Page";
 
 
 class App extends React.Component {
@@ -15,8 +18,16 @@ class App extends React.Component {
         return (
             <Router>
                 <div className="App">
-                    <NavBar/>
+                    <Link to="/LandingPage"/>
                 </div>
+                <Switch>
+                    <Route path="/LandingPage">
+                        <LandingPage/>
+                    </Route>
+                    <Route path="/Home">
+                        <NavBar/>
+                    </Route>
+                </Switch>
             </Router>
         );
     }
