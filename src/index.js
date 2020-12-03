@@ -7,8 +7,9 @@ import 'tachyons';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from "./App";
+import LandingPage from "./Views/Landing Page/Landing Page";
 ReactDOM.render(
-  <App/>,
+  <LandingPage/>,
   document.getElementById('root')
 );
 

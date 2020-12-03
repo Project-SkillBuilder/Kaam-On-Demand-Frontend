@@ -120,15 +120,17 @@ class RegForm extends React.Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <button
-                                            className="Registration_Form_signup-btn btn shadow-lg mb-20 bg-white grow"
-                                            type="button" name="button">Sign Up
-                                        </button>
-                                    </td>
+                                        <td>
+                                                <button
+                                                    className="Registration_Form_signup-btn btn shadow-lg mb-20 bg-white grow"
+                                                    type="button" name="button">Sign Up
+                                                </button>
+                                        </td>
+
                                 </tr>
                             </table>
                         </div>
+
                     </form>
                 </div>
             </div>

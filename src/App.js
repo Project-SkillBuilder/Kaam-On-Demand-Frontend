@@ -8,14 +8,14 @@ import {
     Route,
     Link
 } from "react-router-dom";
-
+import RegForm from "./Components/Sign-up Form/Registration Form";
 
 class App extends React.Component {
     render() {
         return (
             <Router>
                 <div className="App">
-                    <NavBar/>
+                    <RegForm/>
                 </div>
             </Router>
         );
