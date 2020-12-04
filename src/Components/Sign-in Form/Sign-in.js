@@ -3,7 +3,11 @@ import $ from "jquery";
 import kod from "./kod.png";
 import "./Sign-in.css";
 import "./kod.png";
-import {Link} from "react-router-dom";
+import {
+    Link
+} from "react-router-dom";
+import CatPage from "../../Views/Category Page/Category Page";
+import RegForm from "../Sign-up Form/Registration Form";
 
 function SignInUp() {
     return (
@@ -67,9 +71,11 @@ function SignInUp() {
                             </div>
                             <div className="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
                                 <div className="choice-box">
-                                    <button className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
-                                            name="signup">Create an Account
-                                    </button>
+                                    <Link to="/RegistrationForm">
+                                        <button onClick={$('#signinup').modal('hide')} className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
+                                                name="signup">Create an Account
+                                        </button>
+                                    </Link>
                                     <br/>
                                         <div className="hol">
                                             <span className="hol-innertext">or</span>
@@ -81,12 +87,11 @@ function SignInUp() {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-            
         </div>
+
     );
 }
 export default SignInUp;
