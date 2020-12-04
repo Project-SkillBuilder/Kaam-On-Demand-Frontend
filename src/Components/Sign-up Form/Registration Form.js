@@ -1,6 +1,7 @@
 import React from "react";
 import './Registration Form.css';
 import kod from "./kod.png";
+import {Link} from "react-router-dom";
 
 class RegForm extends React.Component {
     render() {
@@ -121,10 +122,12 @@ class RegForm extends React.Component {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <button
-                                            className="Registration_Form_signup-btn btn shadow-lg mb-20 bg-white grow"
-                                            type="button" name="button">Sign Up
-                                        </button>
+                                        <Link to="/Home">
+                                            <button
+                                                className="Registration_Form_signup-btn btn shadow-lg mb-20 bg-white grow"
+                                                type="button" name="button">Sign Up
+                                            </button>
+                                        </Link>
                                     </td>
                                 </tr>
                             </table>

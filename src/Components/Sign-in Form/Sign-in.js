@@ -67,17 +67,21 @@ function SignInUp() {
                             </div>
                             <div className="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
                                 <div className="choice-box">
-                                    <button className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
-                                            name="signup">Create an Account
-                                    </button>
+                                    <Link to="/RegistrationForm">
+                                        <button onClick={$('#signinup').modal('hide')} className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
+                                                name="signup">Create an Account
+                                        </button>
+                                    </Link>
                                     <br/>
-                                        <div className="hol">
-                                            <span className="hol-innertext">or</span>
-                                        </div>
-                                        <button className="googlebtn grow" type="submit" name="googlebtn">
+                                    <div className="hol">
+                                        <span className="hol-innertext">or</span>
+                                    </div>
+                                    <Link to="/RegistrationForm">
+                                        <button onClick={$('#signinup').modal('hide')} className="googlebtn grow" type="submit" name="googlebtn">
                                             <a href="#" className="google btn">
                                                 <i className="i fa fa-google fa-fw"/> Login with Google+</a>
                                         </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

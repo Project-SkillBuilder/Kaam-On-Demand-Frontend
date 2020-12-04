@@ -8,9 +8,8 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import CustomerProfile from "./Views/Customer Profile/Customer Profile";
 import LandingPage from "./Views/Landing Page/Landing Page";
-import CatPage from "./Views/Category Page/Category Page";
+import RegForm from "./Components/Sign-up Form/Registration Form";
 
 
 class App extends React.Component {
@@ -21,6 +20,9 @@ class App extends React.Component {
                     <Link to="/LandingPage"/>
                 </div>
                 <Switch>
+                    <Route path="/RegistrationForm">
+                        <RegForm/>
+                    </Route>
                     <Route path="/LandingPage">
                         <LandingPage/>
                     </Route>
