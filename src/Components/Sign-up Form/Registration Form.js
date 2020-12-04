@@ -1,13 +1,7 @@
 import React from "react";
 import './Registration Form.css';
 import kod from "./kod.png";
-import{
-    BrowserRouter as Router,
-    Link,
-    Switch,
-    Route
-} from "react-router-dom";
-import CatPage from "../../Views/Category Page/Category Page";
+import {Link} from "react-router-dom";
 
 class RegForm extends React.Component {
     render() {
@@ -127,18 +121,17 @@ class RegForm extends React.Component {
                                     </td>
                                 </tr>
                                 <tr>
-                                        <td>
-                                            <Link to="/Home">
-                                                <button
-                                                    className="Registration_Form_signup-btn btn shadow-lg mb-20 bg-white grow"
-                                                    type="button" name="button">Sign Up
-                                                </button>
-                                            </Link>
-                                        </td>
+                                    <td>
+                                        <Link to="/Home">
+                                            <button
+                                                className="Registration_Form_signup-btn btn shadow-lg mb-20 bg-white grow"
+                                                type="button" name="button">Sign Up
+                                            </button>
+                                        </Link>
+                                    </td>
                                 </tr>
                             </table>
                         </div>
-
                     </form>
                 </div>
             </div>

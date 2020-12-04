@@ -77,13 +77,14 @@ function SignInUp() {
                                         </button>
                                     </Link>
                                     <br/>
-                                        <div className="hol">
-                                            <span className="hol-innertext">or</span>
-                                        </div>
-                                        <button className="googlebtn grow" type="submit" name="googlebtn">
-                                            <a href="#" className="google btn">
-                                                <i className="i fa fa-google fa-fw"/> Login with Google+</a>
+                                    <div className="hol">
+                                        <span className="hol-innertext">or</span>
+                                    </div>
+                                    <Link to="/RegistrationForm">
+                                        <button onClick={$('#signinup').modal('hide')} className="google btn grow">
+                                            <i className="i fa fa-google fa-fw"/> Login with Google+
                                         </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

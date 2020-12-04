@@ -191,15 +191,15 @@ const Workerinfo = () => {
                                     </td>
                                     <td>
                                         <p className="row">
-                                            <input type="radio" id="1"/>
+                                            <input type="radio" id="1" name="ratings"/>
                                             <label htmlFor="1">very bad</label>&nbsp;
-                                            <input type="radio" id="2"/>
+                                            <input type="radio" id="2" name="ratings"/>
                                             <label htmlFor="2">bad</label>&nbsp;
-                                            <input type="radio" id="3"/>
+                                            <input type="radio" id="3" name="ratings"/>
                                             <label htmlFor="3">good</label>&nbsp;
-                                            <input type="radio" id="4"/>
+                                            <input type="radio" id="4" name="ratings"/>
                                             <label htmlFor="4">very good</label>&nbsp;
-                                            <input type="radio" id="5"/>
+                                            <input type="radio" id="5" name="ratings"/>
                                             <label htmlFor="5">excellent</label>
                                         </p>
                                     </td>
