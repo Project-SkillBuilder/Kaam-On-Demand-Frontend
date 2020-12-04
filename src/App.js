@@ -8,15 +8,26 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import RegForm from "./Components/Sign-up Form/Registration Form";
+import CustomerProfile from "./Views/Customer Profile/Customer Profile";
+import LandingPage from "./Views/Landing Page/Landing Page";
+import CatPage from "./Views/Category Page/Category Page";
+
 
 class App extends React.Component {
     render() {
         return (
             <Router>
                 <div className="App">
-                    <RegForm/>
+                    <Link to="/LandingPage"/>
                 </div>
+                <Switch>
+                    <Route path="/LandingPage">
+                        <LandingPage/>
+                    </Route>
+                    <Route path="/Home">
+                        <NavBar/>
+                    </Route>
+                </Switch>
             </Router>
         );
     }

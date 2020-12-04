@@ -1,9 +1,9 @@
 import React from "react";
+import $ from "jquery";
 import kod from "./kod.png";
 import "./Sign-in.css";
 import "./kod.png";
-
-
+import {Link} from "react-router-dom";
 
 function SignInUp() {
     return (
@@ -56,30 +56,29 @@ function SignInUp() {
                                 <div className="forgot-pass">
                                     <em className="pointer em">Forgot Password?</em>
                                 </div>
-
-                                    <div className="login-box">
-                                        <button className="login-btn shadow-lg  mb-5 rounded grow" type="submit"
-                                                name="login">Login
+                                <div className="login-box">
+                                    <Link to="/Home">
+                                        <button onClick={$('#signinup').modal('hide')} className="login-btn shadow-lg  mb-5 rounded grow" type="submit"
+                                                name="login">
+                                                Login
                                         </button>
-                                    </div>
+                                    </Link>
+                                </div>
                             </div>
                             <div className="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
-
-                                    <div className="choice-box">
-
-                                        <button className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
+                                <div className="choice-box">
+                                    <button className="create-btn btn shadow-lg  mb-5 rounded grow" type="submit"
                                             name="signup">Create an Account
-                                        </button>
-
+                                    </button>
                                     <br/>
                                         <div className="hol">
                                             <span className="hol-innertext">or</span>
                                         </div>
-                                            <button className="googlebtn grow" type="submit" name="googlebtn">
-                                                <a href="#" className="google btn">
-                                                    <i className="i fa fa-google fa-fw"/> Login with Google+</a>
-                                            </button>
-                                    </div>
+                                        <button className="googlebtn grow" type="submit" name="googlebtn">
+                                            <a href="#" className="google btn">
+                                                <i className="i fa fa-google fa-fw"/> Login with Google+</a>
+                                        </button>
+                                </div>
                             </div>
                         </div>
 
