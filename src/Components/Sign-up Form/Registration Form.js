@@ -7,7 +7,7 @@ class RegForm extends React.Component {
     render() {
         return (
 
-            <div>
+            <div className="body">
                 <img className="Registration_Form_img" src={kod} alt="logo"/>
                 <div className="Registration_Form_vertical-line"/>
                 <div className="Registration_Form_form-box shadow-lg p-5 mb-5 rounded">
