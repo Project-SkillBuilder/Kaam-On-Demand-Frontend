@@ -22,11 +22,11 @@ class App extends React.Component {
                     <Route path="/RegistrationForm">
                         <RegForm/>
                     </Route>
-                    <Route path="/LandingPage">
-                        <LandingPage/>
-                    </Route>
                     <Route path="/Home">
                         <NavBar/>
+                    </Route>
+                    <Route path="/">
+                        <LandingPage/>
                     </Route>
                 </Switch>
             </Router>
