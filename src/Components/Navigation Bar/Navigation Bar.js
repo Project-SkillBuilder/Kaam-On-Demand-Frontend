@@ -36,7 +36,7 @@ const NavBar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/LandingPage">
+                                <Link to="/">
                                     <a className="Navigation_Bar_a nav-link" href="#">Sign-Out</a>
                                 </Link>
                             </li>
