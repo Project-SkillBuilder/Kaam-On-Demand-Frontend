@@ -10,14 +10,14 @@ import {
     Link
 } from "react-router-dom";
 import LandingPage from "../../Views/Landing Page/Landing Page";
-import Workerlist from "../../Views/Worker List/main";
+import Workerlist from "../../Views/Worker List/Worker List";
 import Workerinfo from "../../Views/Worker Info/Worker Info";
 
 
 const NavBar = () => {
     return (
             <div className="Navigation_Bar_body Navigation_Bar_*">
-                <nav className="navbar navbar-expand-sm navbar-light">
+                <nav className="navbar navbar-expand-sm navbar-light position-sticky z-9999 top-0">
                     <a className="Navigation_Bar_a navbar-brand" href="#"><img className="logo" src={kod} alt="logo"/></a>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,20 +43,22 @@ const NavBar = () => {
                         </ul>
                     </div>
                 </nav>
-                <Switch>
-                    <Route path="/Home/WorkerList/WorkerInfo">
-                        <Workerinfo/>
-                    </Route>
-                    <Route path="/Home/WorkerList">
-                        <Workerlist/>
-                    </Route>
-                    <Route path="/Home/CustomerProfile">
-                        <CustomerProfile/>
-                    </Route>
-                    <Route path="/Home">
-                        <CatPage/>
-                    </Route>
-                </Switch>
+                <div>
+                    <Switch>
+                        <Route path="/Home/WorkerList/WorkerInfo">
+                            <Workerinfo/>
+                        </Route>
+                        <Route path="/Home/WorkerList">
+                            <Workerlist/>
+                        </Route>
+                        <Route path="/Home/CustomerProfile">
+                            <CustomerProfile/>
+                        </Route>
+                        <Route path="/Home">
+                            <CatPage/>
+                        </Route>
+                    </Switch>
+                </div>
             </div>
     );
 }

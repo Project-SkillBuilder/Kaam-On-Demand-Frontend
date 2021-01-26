@@ -35,11 +35,13 @@ class LandingPage extends React.Component{
                           <img src="https://robohash.org/123" alt='robot'/>
                         </div>
                         <div className="contentbox">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                          sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                          convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                          scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                          Ut sodales velit enim, a congue ex volutpat et.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                                sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                                convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                                scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                                Ut sodales velit enim, a congue ex volutpat et.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -49,11 +51,13 @@ class LandingPage extends React.Component{
                           <img src="https://robohash.org/123" alt='robot'/>
                         </div>
                         <div className="contentbox">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                          sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                          convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                          scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                          Ut sodales velit enim, a congue ex volutpat et.
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                                sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                                convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                                scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                                Ut sodales velit enim, a congue ex volutpat et.
+                            </p>
                         </div>
                     </div>
                   </div>
@@ -64,11 +68,13 @@ class LandingPage extends React.Component{
                               <img src="https://robohash.org/123" alt='robot'/>
                           </div>
                           <div className="contentbox">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                              sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                              convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                              scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                              Ut sodales velit enim, a congue ex volutpat et.
+                              <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                                  sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                                  convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                                  scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                                  Ut sodales velit enim, a congue ex volutpat et.
+                              </p>
                           </div>
                     </div>
                   </div>
@@ -78,11 +84,13 @@ class LandingPage extends React.Component{
                               <img src="https://robohash.org/123" alt='robot'/>
                           </div>
                           <div className="contentbox">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                              sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                              convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                              scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                              Ut sodales velit enim, a congue ex volutpat et.
+                              <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                                  sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                                  convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                                  scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                                  Ut sodales velit enim, a congue ex volutpat et.
+                              </p>
                           </div>
                     </div>
                   </div>
@@ -93,11 +101,13 @@ class LandingPage extends React.Component{
                               <img src="https://robohash.org/123" alt='robot'/>
                           </div>
                           <div className="contentbox">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
-                              sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
-                              convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
-                              scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
-                              Ut sodales velit enim, a congue ex volutpat et.
+                              <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse hendrerit neque sit amet erat sagittis
+                                  sagittis. Morbi mattis erat quam, id pretium nulla mollis quis. Ut feugiat condimentum quam, accumsan
+                                  convallis diam aliquet nec. Vestibulum non erat orci. Morbi vitae arcu congue, fermentum enim nec,
+                                  scelerisque turpis. Curabitur at quam dapibus, molestie sapien nec, tempus justo. Duis vel facilisis velit.
+                                  Ut sodales velit enim, a congue ex volutpat et.
+                              </p>
                           </div>
                     </div>
                   </div>

@@ -1,55 +1,20 @@
-
-body {
-    font-family: 'Montserrat Alternates', sans-serif;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
 .Category_Page_Sbar{
     padding-top: 8vh;
 }
-
-.Category_Page_logo{
-    border: none;
-}
-
-.Category_Page_card {
-    background: #f4f4f4;
-    max-width: 200px;
-    width: 30%;
-    height: auto;
-    border: none;
-}
-
-.Category_Page_h2{
-    margin-top: 5px;
-    font-size: 1.7vw;
-}
-
-.Category_Page_img {
-    border: 1px solid #0dceda ;
-    border-radius: 3px;
-}
-
-/*Navigation Bar CSS*/
-
-.Category_Page_a{
-    height: 70px;
-    margin-bottom: 15px;
-}
-
-.Category_Page_a:hover{
-    color: white;
+.Category_Page_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
 }
 
 .Category_Page_container{
     display: flex;
     flex-direction: row;
+    justify-content : center;
     text-after: center;
     flex-wrap: wrap;
     position: absolute;
-    margin-top: 8vh;
-    left: 17vw;
-    right: 17vw;
-    z-index: -2;
+    margin-top: 18vh;
 }

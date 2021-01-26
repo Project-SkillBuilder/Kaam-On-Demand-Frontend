@@ -1,24 +1,26 @@
-body {
-    padding: 10px;
-    font-size: 1.3vw;
-    background: #ebfffa;
-}
-
 .WCard_li{
-    font-size: 1vw;
 }
 
 .WCard_img{
     object-fit: contain;
-    max-height: 200px;
+    width: 30vw;
+    height: auto;
 }
 
 .WCard_cards {
-    background: #c6fce5;
+    padding: 0;
+    min-font-size: 20px;
+    font-size: 1.7vw;
     max-height: 250px;
-    height: 10%;
+    height: 30vw;
 }
 
 .checked {
     color: orange;
+}
+
+.Winfo{
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
 }
