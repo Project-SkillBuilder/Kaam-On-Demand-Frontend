@@ -6,8 +6,6 @@
 }
 
 .body{
-  background: url("logo.jpg");
-  background-size: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 .main{
@@ -36,9 +34,7 @@
 
 .flexbox-main{
   height: auto;
-  padding-top: 100px;
-  background: linear-gradient(45deg, #fafcc2, #a0c1b8, #19a4c0, #fff0f0);
-  background-attachment: fixed;
+  padding-top: 10vh;
 }
 
 .flexbox{
@@ -67,13 +63,25 @@
   background: none;
   left: 24%;
   text-align: center;
-  padding: 8px 25px 18px 10px;
+  padding: 1.5rem 25px 18px 10px;
 }
 
 .main img{
   width: 100%;
 }
 
+.bottom-background{
+  background: linear-gradient(45deg, #fafcc2, #a0c1b8, #19a4c0, #fff0f0);
+  background-attachment: fixed;
+}
+
+.bottom-card{
+  position: absolute;
+  top:-50vh;
+  height: 225vh;
+  background: #f3eac2;
+  border: none;
+}
 
 .knowmore-btn{
   display: block;

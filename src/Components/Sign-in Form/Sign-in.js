@@ -6,18 +6,23 @@ import "./kod.png";
 import {
     Link
 } from "react-router-dom";
-import CatPage from "../../Views/Category Page/Category Page";
-import RegForm from "../Sign-up Form/Registration Form";
+
+
 
 function SignInUp() {
     return (
         <div>
-
-            
-            <button type="button" className="btn btn btn1 btn-primary m-3 rounded grow" data-toggle="modal" data-target="#signinup">
-                Sign-In/Sign-Up
-            </button>
-
+            <div className="navbar">
+                <nav className="navbar navbar-light bg-light">
+                    <ul>
+                        <li>
+                            <button type="button" className="btn btn btn1 btn-primary m-3 rounded grow" data-toggle="modal" data-target="#signinup">
+                            Sign-In/Sign-Up
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div className="modal fade" id="signinup" data-backdrop="static" data-keyboard="false" tabIndex="-1" aria-labelledby="signinupLabel" aria-hidden="true">
                 <div className="modal-dialog sign-in-box shadow-lg p-3 mb-5 rounded">
                     <div className="modal-content">
