@@ -58,42 +58,56 @@ function WProfile() {
                     </div>
                 </div>
                 <div className="right-side">
-                    <div className="nav">
-                        <ul>
-                            <li onClick="tabs(0)" className="user-post active">Posts</li>
-                            <li onClick="tabs(1)" className="user-review">Reviews</li>
-                            <li onClick="tabs(2)" className="user-setting">Settings</li>
-                        </ul>
-                    </div>
-                    <div className="profile-body">
-                        <div className="profile-posts tab">
+                    <ul className="nav mb-3" id="tabs-tab" role="tablist">
+                        <li className="nav-item user-post" role="presentation">
+                            <a className="nav-link active" id="tabs-home-tab" data-toggle="tab" href="#tabs-home"
+                               role="tab" aria-controls="tabs-home" aria-selected="true">Home</a>
+                        </li>
+                        <li className="nav-item user-review" role="presentation">
+                            <a className="nav-link" id="tabs-profile-tab" data-toggle="tab" href="#tabs-profile"
+                               role="tab" aria-controls="tabs-profile" aria-selected="false">Profile</a>
+                        </li>
+                        <li className="nav-item user-setting" role="presentation">
+                            <a className="nav-link" id="tabs-contact-tab" data-toggle="tab" href="#tabs-contact"
+                               role="tab" aria-controls="tabs-contact" aria-selected="false">Contact</a>
+                        </li>
+                    </ul>
+                    <div className="tab-content profile-body" id="tabs-tabContent">
+                        <div className="profile-posts tab-pane fade show active" id="tabs-home" role="tabpanel"
+                             aria-labelledby="tabs-home-tab">
                             <h1>Posts</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quae sint magni
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quae sint magni
                                 cupiditate non, quod velit similique ducimus! Impedit dicta, sit officiis rerum.
                                 Adipisci ut facere atque nostrum odit dolorum ea cumque modi. Asperiores dolorum, iure
                                 odit ad, tempore magnam beatae deleniti soluta quisquam assumenda pariatur incidunt
                                 sapiente eaque modi earum. Ab ducimus accusamus recusandae, odio iusto commodi fuga,
-                                repellat inventore iure aut libero consequatur sequi nesciunt dolorem ipsam.</p>
+                                repellat inventore iure aut libero consequatur sequi nesciunt dolorem ipsam.
+                            </p>
                         </div>
-                        <div className="profile-reviews tab">
-                            <h1>User Reviews</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus id cupiditate libero
-                                eius dolore, in rem nulla reiciendis. Qui, vero voluptatum! Quia iusto accusamus
-                                corporis, illo, ullam quibusdam maiores assumenda explicabo illum eligendi odit fugiat
-                                a, laborum rerum architecto eum ut distinctio. Error quos temporibus at expedita? Optio
-                                amet aliquam provident voluptatum minima quidem nemo harum doloremque. Est nihil
-                                quisquam quis deserunt repellat, natus, saepe laborum. Ipsum officiis, nisi optio.</p>
-
+                        <div className="profile-reviews tab-pane fade" id="tabs-profile" role="tabpanel"
+                             aria-labelledby="tabs-profile-tab">
+                            <h1>Reviews</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quae sint magni
+                                cupiditate non, quod velit similique ducimus! Impedit dicta, sit officiis rerum.
+                                Adipisci ut facere atque nostrum odit dolorum ea cumque modi. Asperiores dolorum, iure
+                                odit ad, tempore magnam beatae deleniti soluta quisquam assumenda pariatur incidunt
+                                sapiente eaque modi earum. Ab ducimus accusamus recusandae, odio iusto commodi fuga,
+                                repellat inventore iure aut libero consequatur sequi nesciunt dolorem ipsam.
+                            </p>
                         </div>
-                        <div className="profile-settings tab">
-                            <h1>Account Setting</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, eligendi magnam. Fuga
-                                ducimus assumenda, nemo sit, quod eveniet quidem dolorum modi voluptas dignissimos
-                                tempore omnis saepe officiis aliquam. Tempore sed voluptatum, illo sit vitae ullam
-                                consequatur, architecto enim iusto asperiores cupiditate debitis blanditiis harum quas
-                                ad dolor dolores veritatis molestiae! Aperiam, laboriosam! Temporibus modi vero ab quis,
-                                qui fuga reiciendis, hic, molestias vel ut recusandae eius nesciunt harum praesentium?
-                                Libero.</p>
+                        <div className="profile-settings tab-pane fade" id="tabs-contact" role="tabpanel"
+                             aria-labelledby="tabs-contact-tab">
+                            <h1>Settings</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores iure quae sint magni
+                                cupiditate non, quod velit similique ducimus! Impedit dicta, sit officiis rerum.
+                                Adipisci ut facere atque nostrum odit dolorum ea cumque modi. Asperiores dolorum, iure
+                                odit ad, tempore magnam beatae deleniti soluta quisquam assumenda pariatur incidunt
+                                sapiente eaque modi earum. Ab ducimus accusamus recusandae, odio iusto commodi fuga,
+                                repellat inventore iure aut libero consequatur sequi nesciunt dolorem ipsam.
+                            </p>
                         </div>
                     </div>
                 </div>
