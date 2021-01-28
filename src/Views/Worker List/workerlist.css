@@ -1,0 +1,19 @@
+.Worker_list_div{
+}
+
+.Worker_list_sbar{
+    padding: 5vw 0 5vw 0;
+}
+
+.Worker_list_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Worker_list_pane{
+    padding-top: 16px;
+    position: sticky;
+    top: 100px;
+    z-index: 9999;
+}
