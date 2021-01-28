@@ -116,6 +116,12 @@ em{
     margin-top: 2vh;
 }
 
+.navbar{
+    position: fixed;
+    z-index: 1;
+    background: #000000;
+}
+
 .login-btn{
     font-family: 'Nunito', sans-serif;
     font-size: 1.15vw;
