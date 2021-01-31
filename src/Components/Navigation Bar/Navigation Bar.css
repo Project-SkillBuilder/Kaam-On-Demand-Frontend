@@ -1,6 +1,8 @@
 .Navigation_Bar_body{
   font-family: 'Montserrat Alternates', sans-serif;
+  width: 100%;
 }
+
 
 .Navigation_Bar_* {
   margin: 0;

@@ -8,18 +8,21 @@
 }
 
 .WCard_cards {
+    margin-bottom: 50px;
     padding: 0;
     min-font-size: 20px;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     max-height: 250px;
     height: 30vw;
 }
+
 
 .checked {
     color: orange;
 }
 
 .Winfo{
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-items: end;

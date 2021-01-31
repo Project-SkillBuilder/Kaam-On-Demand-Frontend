@@ -1,20 +1,36 @@
-.Category_Page_Sbar{
-    padding-top: 8vh;
+
+.main-body{
+    margin: 0 0 0 0;
 }
-.Category_Page_main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+#bg{
     position: relative;
+    width: 100%;
+    opacity: 0.9;
     z-index: -1;
 }
 
+.Category_Page_Sbar{
+    width: 100%;
+    padding-top: 8vh;
+}
+.Category_Page_main{
+    margin-left: 300px;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
 .Category_Page_container{
+    opacity: 0.9;
+    width: 200%;
     display: flex;
     flex-direction: row;
     justify-content : center;
     text-after: center;
     flex-wrap: wrap;
-    position: absolute;
     margin-top: 18vh;
 }
