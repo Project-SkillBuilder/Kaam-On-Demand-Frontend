@@ -27,7 +27,6 @@ class LandingPage extends React.Component{
           </div>
           <a id="linking-content">
             <div className="bottom" id="bottom-content">
-              <SignInUp/>
               <div className="d-flex flexbox-main flex-lg-column justify-content-start">
                 <div className="d-flex flexbox flex-lg-row align-items-lg-center">
                     <div className="card row col-5 border ma5 grow shadow-4">
