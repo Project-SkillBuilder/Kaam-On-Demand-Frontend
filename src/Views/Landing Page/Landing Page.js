@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./logo.jpg";
 import kod from "./kod.png";
 import "./stylesheet.css";
 import SignInUp from "../../Components/Sign-in Form/Sign-in";
+
 
 class LandingPage extends React.Component{
   render() {
@@ -20,10 +20,52 @@ class LandingPage extends React.Component{
         <div>
           <div className="main body">
             <img id="logo" src={kod} alt="logo"/>
-            <SignInUp/>
-            <a href="#linking-content">
-              <button className="knowmore-btn btn-primary" onClick={myFunction}>Know More</button>
-            </a>
+              <div className="banner1">
+
+                      <div className="text-box1 text-box11">
+                          <h1>
+                              <mark>Kaam On Demand</mark>
+                          </h1>
+                          <span></span>
+                      </div>
+              </div>
+
+              <div className="banner2">
+
+                      <div className="text-box1 text-box2">
+                          <h1>
+                              <mark>Kaam On Demand</mark>
+                          </h1>
+                          <span></span>
+                      </div>
+              </div>
+
+              <div className="banner3">
+
+                      <div className="text-box1 text-box3">
+                          <h1>
+                              <mark>Kaam On Demand</mark>
+                          </h1>
+                          <span></span>
+                      </div>
+              </div>
+
+              <div className="banner4">
+                      <div className="text-box1 text-box4">
+                          <h1>
+                              <mark>Kaam On Demand</mark>
+                          </h1>
+                          <span></span>
+                      </div>
+              </div>
+              <div className="sgbtn">
+                <SignInUp/>
+              </div>
+              <div className="btn-know">
+                  <a href="#linking-content">
+                  <button className="knowmore-btn btn-primary" onClick={myFunction}>Know More</button>
+                  </a>
+              </div>
           </div>
           <a id="linking-content">
             <div className="bottom" id="bottom-content">
