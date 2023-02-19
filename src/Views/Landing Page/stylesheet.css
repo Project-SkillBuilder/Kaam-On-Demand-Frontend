@@ -92,6 +92,10 @@
   }
 }
 
+.text-box1 h1{
+  margin-bottom: 10px;
+}
+
 .text-box1 h1 mark{
   background-color: #000000;
   color: #fff;

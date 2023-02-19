@@ -9,7 +9,7 @@ class LandingPage extends React.Component{
 
     const myFunction =() => {
       const x = document.getElementById("bottom-content");
-      if (x.style.display == "block") {
+      if (x.style.display === "block") {
         x.style.display = "none";
       } else {
         x.style.display = "block";
@@ -24,9 +24,9 @@ class LandingPage extends React.Component{
 
                       <div className="text-box1 text-box11">
                           <h1>
-                              <mark>Kaam On Demand</mark>
+                              Kaam On Demand
                           </h1>
-                          <span></span>
+                          <span/>
                       </div>
               </div>
 
@@ -34,9 +34,9 @@ class LandingPage extends React.Component{
 
                       <div className="text-box1 text-box2">
                           <h1>
-                              <mark>Kaam On Demand</mark>
+                              Kaam On Demand
                           </h1>
-                          <span></span>
+                          <span/>
                       </div>
               </div>
 
@@ -44,18 +44,18 @@ class LandingPage extends React.Component{
 
                       <div className="text-box1 text-box3">
                           <h1>
-                              <mark>Kaam On Demand</mark>
+                              Kaam On Demand
                           </h1>
-                          <span></span>
+                          <span/>
                       </div>
               </div>
 
               <div className="banner4">
                       <div className="text-box1 text-box4">
                           <h1>
-                              <mark>Kaam On Demand</mark>
+                              Kaam On Demand
                           </h1>
-                          <span></span>
+                          <span/>
                       </div>
               </div>
               <div className="sgbtn">

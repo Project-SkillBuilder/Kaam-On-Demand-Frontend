@@ -33,9 +33,9 @@ function WProfile() {
                                 atque dolor quidem, ullam, voluptate molestias! Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div className="profile-btn">
-                            <button className="mkcbtn">
-                                <i className="fa fa-comment"></i> mkc
-                            </button>
+                            {/*<button className="mkcbtn">*/}
+                            {/*    <i className="fa fa-comment"></i> mkc*/}
+                            {/*</button>*/}
                             <button className="editbtn">
                                 <i className="fa fa-plus"></i>Edit
                             </button>

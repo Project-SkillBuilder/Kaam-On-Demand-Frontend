@@ -4,6 +4,9 @@
     height: auto;
     border: none;
 }
+img{
+    height: ;
+}
 
 .Category_Card_h2{
     margin-top: 5px;
@@ -13,4 +16,9 @@
 .Category_Card_img {
     border: 1px solid #0dceda ;
     border-radius: 3px;
+}
+
+body{
+    height: max-content;
+    width: max-content;
 }

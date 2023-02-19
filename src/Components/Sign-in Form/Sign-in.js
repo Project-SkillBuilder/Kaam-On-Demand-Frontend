@@ -7,10 +7,32 @@ import {Link} from "react-router-dom";
 
 class SignInUp extends React.Component {
 
+    verifyUser = () => fetch("http://localhost:8080/customer-login",
+        {
+            method: "POST",
+            mode: "cors",
+            headers: {
+                'Accept': 'application/json, text/plain',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "number": $('#number').val(),
+                "password": $('#password').val()
+            })
+        })
+        .then((res) => res.json())
+        .then((res) => {
+            console.log("response body : ",res)
+            return res;
+        })
+        .catch((err) => {
+            console.log("error occured", err)
+        })
+
     loginType = () => {
         const lType = document.getElementById("LoginType");
         let path = "/";
-        if (lType){
+        if (lType) {
             console.log(lType.selectedOptions[0].value);
             path = lType.selectedOptions[0].value;
         }
@@ -18,8 +40,17 @@ class SignInUp extends React.Component {
     }
 
     selectPath = () => {
-        $('#signinup').modal('hide');
-        document.getElementById(this.loginType()).click();
+        this.verifyUser()
+            .then((res) =>{
+                console.log("response : ", res)
+                if (res) {
+                    $('#signinup').modal('hide');
+                    document.getElementById(this.loginType()).click();
+                }
+                else{
+                    alert("Wrong Credentials")
+                }
+            })
     }
 
     render() {
@@ -80,10 +111,11 @@ class SignInUp extends React.Component {
                                                     </option>
                                                 </select>
                                             </div>
-                                            <input className="email shadow rounded ba b--light-gray" type="email"
-                                                   placeholder="Email or Phone Number" name="email"/><br/>
+                                            <input className="email shadow rounded ba b--light-gray" type="number"
+                                                   placeholder="Email or Phone Number" name="number" id="number"/><br/>
                                             <input className="password shadow rounded ba b--light-gray" type="password"
-                                                   placeholder="Password" name="password" defaultValue=""/>
+                                                   placeholder="Password" name="password" id="password"
+                                                   defaultValue=""/>
                                         </div>
                                     </div>
                                     <div className="forgot-pass">
