@@ -33,7 +33,7 @@ const WorkerCard = () => {
                         <li className="WCard_li">4</li>
                     </ul>
                 </p>
-                <button className="btn-info ma3">Request Service</button>
+                
             </div>
         </Link>
     );
