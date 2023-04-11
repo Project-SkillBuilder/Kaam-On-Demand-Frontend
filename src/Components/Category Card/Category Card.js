@@ -2,13 +2,13 @@ import React from "react";
 import "./Category Card.css";
 import {Link} from "react-router-dom";
 
-const CCard = () => {
+const CCard = (props) => {
     return (
         <Link to="/Home/WorkerList" className='card Category_Card_card tc dib br3 pa3 ma2 grow bw2 shadow-5'>
 
-                <img className="br3 dib Category_Card_img" src="https://robohash.org/123" alt='robot'/>
+                <img className="br3 dib Category_Card_img" src={props.image ? props.image : "https://robohash.org/123"} alt='robot'/>
                 <div>
-                    <h2 className="Category_Card_h2">Lorem Ipsum</h2>
+                    <h2 className="Category_Card_h2">{props.title}</h2>
                 </div>
         </Link>
     );
