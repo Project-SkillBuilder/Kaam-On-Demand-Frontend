@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Category Page.css";
 import CCard from "../../Components/Category Card/Category Card";
 import SearchBar from "../../Components/Search Bar/Search Bar";
 import kod from "./logo.jpg";
+import { baseURL, getCategories } from "../../util/api";
 
-const CategoryCard = [
-  {
-    title: "Milkman",
-    image: "",
-  },
-];
+let CategoryCard = [];
 
 const CatPage = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  const getCategoriesApi = async () => {
+    const res = await fetch(baseURL + getCategories);
+    const body = await res.json();
+    CategoryCard = body.data;
+    setIsLoaded(true);
+  };
+  getCategoriesApi();
   return (
     <div className="main-body">
       <img id="bg" src={kod} alt="background" />
@@ -20,9 +25,23 @@ const CatPage = () => {
           <SearchBar />
         </div>
         <div className="Category_Page_container">
-          {CategoryCard.map((item) => {
-            return <CCard title={item.title} image={item.image} key={item.id} />;
-          })}
+          {isLoaded ? (
+            <div>
+              {CategoryCard.map((item) => {
+                return (
+                  <CCard
+                    title={item.category}
+                    image={item.image}
+                    key={item.id}
+                  />
+                );
+              })}
+            </div>
+          ) : (
+            <div>
+              <h2>No data Found</h2>
+            </div>
+          )}
         </div>
       </div>
     </div>

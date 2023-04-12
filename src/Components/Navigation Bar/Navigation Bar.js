@@ -45,13 +45,13 @@ const NavBar = () => {
                 </nav>
                 <div>
                     <Switch>
-                        <Route path="/Home/WorkerList/WorkerInfo">
+                        <Route path="/Home/WorkerList/WorkerInfo/:number">
                             <Workerinfo/>
                         </Route>
-                        <Route path="/Home/WorkerList">
+                        <Route path="/Home/WorkerList/:Category">
                             <Workerlist/>
                         </Route>
-                        <Route path="/Home/CustomerProfile">
+                        <Route path="/Home/CustomerProfile/">
                             <CustomerProfile/>
                         </Route>
                         <Route path="/Home">

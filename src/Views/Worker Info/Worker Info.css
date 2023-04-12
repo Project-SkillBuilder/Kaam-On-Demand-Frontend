@@ -42,6 +42,21 @@ body{
     align-self: flex-end;
 }
 
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 15px;
+ }
+
+.rating {
+    margin-left: 15px;
+}
+
+.add-review {
+    margin-left: 15px;
+}
+
 .Winfo_main .comment div {
     border-bottom: 1px solid darkgray;
 }

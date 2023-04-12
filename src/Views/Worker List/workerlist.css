@@ -34,7 +34,7 @@ body{
     width: 200%;
     left: 20vw;
     right: 17vw;
-    z-index: -2;
+    z-index: 2;
 }
 .Worker_list_pane{
     position: relative;

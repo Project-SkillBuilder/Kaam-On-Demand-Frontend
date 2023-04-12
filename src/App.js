@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import LandingPage from "./Views/Landing Page/Landing Page";
 import RegForm from "./Components/Sign-up Form/Registration Form";
-import WProfile from "./Views/worker profile/main";
+import WProfile from "./Views/worker profile/WorkerHome";
 
 
 class App extends React.Component {

@@ -6,7 +6,7 @@
 #bg{
     position: relative;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.5;
     z-index: -1;
 }
 
@@ -32,5 +32,5 @@
     justify-content : center;
     text-after: center;
     flex-wrap: wrap;
-    margin-top: 18vh;
+    margin-top: 7vh;
 }
