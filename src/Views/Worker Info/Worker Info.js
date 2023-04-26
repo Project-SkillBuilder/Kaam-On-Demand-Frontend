@@ -36,7 +36,7 @@ const Workerinfo = () => {
 
   const addReview = async () => {
     const response = await fetch(
-      "http://localhost:8080/worker/addReview/" + WorkerInfo.number,
+      "http://localhost:8081/worker/addReview/" + WorkerInfo.number,
       {
         method: "POST", // or 'PUT'
         headers: {

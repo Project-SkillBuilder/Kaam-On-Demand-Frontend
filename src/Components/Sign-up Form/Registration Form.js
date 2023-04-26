@@ -18,7 +18,7 @@ class RegForm extends React.Component {
             "password" : $('#password').val()
         }
         console.log("body : ", body)
-        fetch("http://localhost:8080/register",{
+        fetch("http://localhost:8081/customer/register",{
             method : "POST",
             mode : "cors",
             headers : {

@@ -3,6 +3,7 @@ import "./Navigation Bar.css";
 import kod from "./kod.png";
 import CustomerProfile from "../../Views/Customer Profile/Customer Profile";
 import CatPage from "../../Views/Category Page/Category Page";
+import AdminPage from "../../Views/Admin Page/Admin Page";
 import {
     BrowserRouter as Router,
     Switch,
@@ -14,7 +15,7 @@ import Workerlist from "../../Views/Worker List/Worker List";
 import Workerinfo from "../../Views/Worker Info/Worker Info";
 
 
-const NavBar = () => {
+const NavBar = (props) => {
     return (
             <div className="Navigation_Bar_body Navigation_Bar_*">
                 <nav className="navbar navbar-expand-sm navbar-light position-sticky z-9999 top-0">

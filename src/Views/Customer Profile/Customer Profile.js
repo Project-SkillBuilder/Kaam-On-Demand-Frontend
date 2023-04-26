@@ -12,6 +12,7 @@ let CustomerInfo = [];
 const CustomerProfile = () => {
   const { number } = useParams();
   const [isLoaded, setIsLoaded] = useState(false);
+  
   const getCustomerInfo = async () => {
     const res = await fetch(baseURL + getCustomerProfile + number);
     const body = await res.json();
@@ -19,7 +20,9 @@ const CustomerProfile = () => {
     setIsLoaded(true);
   };
 
-
+  useEffect(() =>{
+    getCustomerInfo();
+  }, [])
 
   return (
     <div style={{ padding: 0 }}>
@@ -66,7 +69,7 @@ const CustomerProfile = () => {
               aria-controls="v-tabs-settings"
               aria-selected="false"
             >
-              Histroy
+              History
             </a>
           </div>
         </div>

@@ -1,0 +1,86 @@
+.Navigation_Bar_body{
+  font-family: 'Montserrat Alternates', sans-serif;
+  width: 100%;
+}
+
+
+.Navigation_Bar_* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.Navigation_Bar_a{
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.Navigation_Bar_a:hover{
+  color: white;
+}
+
+nav{
+  height: 13vh;
+  margin-top: 0;
+  background: #41aea9;
+  padding: 0;
+}
+
+nav img{
+  background: none;
+  width: 13vh;
+  position: absolute;
+  top: 8px;
+  left: 5%;
+  transition: all 0.4s ease 0s;
+}
+
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 15px 15px;
+}
+
+nav ul li a{
+  position: relative;
+  color: white;
+  padding: 5px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (max-width : 900px){
+  nav img{
+    left:8%;
+    top: 2vh;
+    width: 80px;
+  }
+}
+
+.Navigation_Bar_div{
+  background: #41aea9;
+}
+

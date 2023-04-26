@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 class SignInUp extends React.Component {
   verifyUser = () =>
-    fetch("http://localhost:8080/customer/customer-login", {
+    fetch("http://localhost:8081/customer/customer-login", {
       method: "POST",
       mode: "cors",
       headers: {
@@ -15,7 +15,7 @@ class SignInUp extends React.Component {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        number: $("#number").val(),
+        number: Number($("#number").val()),
         password: $("#password").val(),
       }),
     })
@@ -174,7 +174,7 @@ class SignInUp extends React.Component {
                     <Link id="/Home" to="/Home" />
                     <Link id="/WorkerHome" to="/WorkerHome" />
                     <button
-                      // onClick={this.selectPath}
+                      onClick={this.selectPath}
                       className="login-btn shadow-lg  mb-5 rounded grow"
                       type="submit"
                       name="login"
