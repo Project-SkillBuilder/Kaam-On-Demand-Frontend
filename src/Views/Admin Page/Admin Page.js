@@ -2,6 +2,7 @@ import React from "react";
 import kod from "./logo.jpg";
 import logo from "./kod.png";
 import "./Admin Page.css";
+import { workersList, customerList } from "../../util/constants";
 import WorkerCard from "../../Components/Worker Card/Worker Card.js";
 import AdminNav from "./AdminNav";
 import { baseURL, getCustomerProfile } from "../../util/api";
@@ -24,7 +25,6 @@ const AdminPage = () => {
 
   return (
     <div>
-      <AdminNav />
       <div className="main-body">
         <img id="logo" src={kod} alt="logo" />
 
@@ -78,8 +78,11 @@ const AdminPage = () => {
                   <h1 className="Cprofile_h1">List Of Customers</h1>&nbsp;
                   <button className="Cprofile_button">edit</button>
                 </div>
-                <div>
-                  <table>
+                {customerList.map((customer) => {
+                        return (
+                <div style={{marginBottom:"25px"}}>
+                    
+                            <table>
                     <tbody className="Cprofile">
                       <tr>
                         <td>
@@ -87,7 +90,7 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p className="Cprofile_fname " id="fname">
-                            :&nbsp;{CustomerInfo.fname}
+                            :&nbsp;{customer.fname}
                           </p>
                         </td>
                       </tr>
@@ -97,7 +100,7 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p className="Cprofile_lname" id="lname">
-                            :&nbsp;{CustomerInfo.lname}
+                            :&nbsp;{customer.lname}
                           </p>
                         </td>
                       </tr>
@@ -107,7 +110,7 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p id="gender" className="Cprofile_gender">
-                            :&nbsp;{CustomerInfo.gender}
+                            :&nbsp;{customer.gender}
                           </p>
                         </td>
                       </tr>
@@ -117,7 +120,7 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p className="Cprofile_phone" id="phone">
-                            :&nbsp;9845762458
+                            :&nbsp;{customer.number}
                           </p>
                         </td>
                       </tr>
@@ -127,7 +130,7 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p className="Cprofile_email" id="email">
-                            :&nbsp;aserg@gmail.com
+                            :&nbsp;{customer.email}
                           </p>
                         </td>
                       </tr>
@@ -137,7 +140,7 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p className="Cprofile_cityname" id="city">
-                            :&nbsp;Lucknow
+                            :&nbsp;{customer.city}
                           </p>
                         </td>
                       </tr>
@@ -147,33 +150,17 @@ const AdminPage = () => {
                         </td>
                         <td>
                           <p className="Cprofile_statename" id="state">
-                            :&nbsp;Uttar Pradesh
+                            :&nbsp;{customer.state}
                           </p>
                         </td>
                       </tr>
                     </tbody>
                   </table>
+                        <hr/>
+                  
                 </div>
-                <div>
-                  <h1 className="Cprofile_h1">Security</h1>
-                  <table>
-                    <tbody className="Cprofile">
-                      <tr>
-                        <td>
-                          <label htmlFor="password">Password</label>
-                        </td>
-                        <td>
-                          <p className="Cprofile_password" id="password">
-                            :&nbsp;**********
-                          </p>
-                        </td>
-                        <td>
-                          <button className="Cprofile_button">change</button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                )
+                    })}
               </div>
               <div
                 className="tab-pane fade"
@@ -183,14 +170,14 @@ const AdminPage = () => {
               >
                 <h1 className="Cprofile_h1">List Of Workers</h1>
                 <hr />
-                12/03/2020
-                <hr />
+                {workersList.map((worker) => {
+                    return (
                 <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
                   <div className="col-3">
                     <img src="https://robohash.org/123" alt="robot" />
                   </div>
                   <div className="col-5">
-                    <p>Name : </p>
+                    <p>Name : {worker.fname + " " + worker.lname}</p>
 
                     <p>
                       Ratings :<span className="fa fa-star checked"></span>
@@ -206,234 +193,13 @@ const AdminPage = () => {
                     <p>
                       Services :
                       <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                        <li>{worker.category}</li>
                       </ul>
                     </p>
                   </div>
                 </div>
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                23/02/2020
-                <hr />
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="tab-pane fade"
-                id="v-tabs-history"
-                role="tabpanel"
-                aria-labelledby="v-tabs-history-tab"
-              >
-                <h1 className="Cprofile_h1">Previously Employed Workers</h1>
-                <hr />
-                12/03/2020
-                <hr />
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <hr />
-                23/02/2020
-                <hr />
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
-                <div className="row col-9 Cprofile_cards border ma3 grow shadow-4">
-                  <div className="col-3">
-                    <img src="https://robohash.org/123" alt="robot" />
-                  </div>
-                  <div className="col-5">
-                    <p>Name : Lorem Ipsum</p>
-
-                    <p>
-                      Ratings :<span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star checked"></span>
-                      <span className="fa fa-star"></span>
-                    </p>
-
-                    <p>Successful Visits: 47</p>
-                  </div>
-                  <div className="col-4">
-                    <p>
-                      Services :
-                      <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                      </ul>
-                    </p>
-                  </div>
-                </div>
+                )})}
+                
               </div>
             </div>
           </div>

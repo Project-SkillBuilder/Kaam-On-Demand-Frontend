@@ -10,6 +10,7 @@ import {
 import LandingPage from "./Views/Landing Page/Landing Page";
 import RegForm from "./Components/Sign-up Form/Registration Form";
 import WProfile from "./Views/worker profile/WorkerHome";
+import AdminPage from './Views/Admin Page/Admin Page';
 
 
 class App extends React.Component {
@@ -27,7 +28,7 @@ class App extends React.Component {
                         <WProfile/>
                     </Route>
                     <Route path="/Home">
-                        <NavBar/>
+                        <AdminPage/>
                     </Route>
                     <Route path="/">
                         <LandingPage/>
