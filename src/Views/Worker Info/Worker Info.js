@@ -3,6 +3,8 @@ import "./Worker Info.css";
 import NavBar from "../../Components/Navigation Bar/Navigation Bar";
 import { baseURL, getWorkerProfile } from "../../util/api";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { SmileOutlined } from '@ant-design/icons';
+import { notification } from 'antd';
 
 let WorkerInfo = [];
 
@@ -54,12 +56,45 @@ const Workerinfo = () => {
     setIsLoaded(true);
   };
 
+  const [api, contextHolder] = notification.useNotification();
+  const openNotification = () => {
+    api.open({
+      message: 'Request Submitted',
+      description:
+        'Your Request has been added to the portal.',
+      icon: (
+        <SmileOutlined
+          style={{
+            color: '#108ee9',
+          }}
+        />
+      ),
+    });
+  };
+
+  const openAddReview = () => {
+    api.open({
+      message: 'Successful',
+      description:
+        'Thanks for reviewing the Worker. Your feddback improves us.',
+      icon: (
+        <SmileOutlined
+          style={{
+            color: '#108ee9',
+          }}
+        />
+      ),
+    });
+  };
+
   useEffect(() => {
     getWorkerInfo();
   }, []);
 
+
   return (
     <div className="bg-white Winfo_main">
+    {contextHolder}
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -114,7 +149,7 @@ const Workerinfo = () => {
               <h4>Description of service - </h4>
               <h4>{WorkerInfo.about}</h4>
               <div className="d-flex justify-end">
-                <button className="btn btnreq btn-primary text-lg-center">
+                <button className="btn btnreq btn-primary text-lg-center" onClick={openNotification}>
                   Request service
                 </button>
               </div>

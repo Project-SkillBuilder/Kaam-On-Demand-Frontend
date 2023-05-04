@@ -1,5 +1,6 @@
 export const workersList = [
   {
+    "id":1,
     "number": 8764736488,
     "fname": "Rinku",
     "lname": "Kumar",
@@ -19,6 +20,7 @@ export const workersList = [
     "active": false
   },
   {
+    "id":2,
     "number": 8967876636,
     "fname": "Lalit",
     "lname": "Yadav",
@@ -38,6 +40,7 @@ export const workersList = [
     "active": false
   },
   {
+    "id":3,
     "number": 8989473984,
     "fname": "Ram",
     "lname": "Khilawan",
@@ -57,6 +60,7 @@ export const workersList = [
     "active": false
   },
   {
+    "id":4,
     "number": 9675467567,
     "fname": "Renu",
     "lname": "Lal",
@@ -76,6 +80,7 @@ export const workersList = [
     "active": false
   },
   {
+    "id":5,
     "number": 9878673353,
     "fname": "Arun",
     "lname": "Kumar",
@@ -95,6 +100,7 @@ export const workersList = [
     "active": false
   },
   {
+    "id":6,
     "number": 9879874944,
     "fname": "Shanti",
     "lname": "Devi",
@@ -114,6 +120,7 @@ export const workersList = [
     "active": false
   },
   {
+    "id":7,
     "number": 9897843677,
     "fname": "Krishna",
     "lname": "Kumar",
@@ -136,6 +143,7 @@ export const workersList = [
 
 export const customerList = [
   {
+    id:1,
     fname: "Sachin",
     lname: "Singhal",
     gender: "Male",
@@ -145,6 +153,7 @@ export const customerList = [
     state: "Uttar Pradesh"
   },
   {
+    id:2,
     fname: "Vansh",
     lname: "Jain",
     gender: "Male",
@@ -154,6 +163,7 @@ export const customerList = [
     state: "Uttar Pradesh"
   },
   {
+    id:3,
     fname: "Dikshansh",
     lname: "Kumar",
     gender: "Male",
@@ -163,6 +173,7 @@ export const customerList = [
     state: "Rajasthan"
   },
   {
+    id:4,
     fname: "Digvijay",
     lname: "Gagneja",
     gender: "Male",
@@ -172,6 +183,7 @@ export const customerList = [
     state: "Madhya Pradesh"
   },
   {
+    id:5,
     fname: "Farhan",
     lname: "Shaikh",
     gender: "Male",
@@ -181,6 +193,7 @@ export const customerList = [
     state: "Uttar Pradesh"
   },
   {
+    id:6,
     fname: "Divya",
     lname: "Sehgal",
     gender: "Female",
